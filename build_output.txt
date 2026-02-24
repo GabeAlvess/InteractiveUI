@@ -1,0 +1,22 @@
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release build\.gens\ImmersiveUI\windows\x64\release\src\pch.h[0m
+[0m[38;2;0;255;0;1m[  0%]:[0m compiling.release build\.gens\ImmersiveUI\windows\x64\release\rules\commonlibsse-ng\plugin\version.rc[0m
+[0m[38;2;0;255;0;1m[  0%]:[0m compiling.release src\keyhandler\keyhandler.cpp[0m
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release src\main.cpp[0m
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release src\vrui\VRMenuManager.cpp[0m
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release src\vrui\VRUIButton.cpp[0m
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release src\vrui\VRUIContainer.cpp[0m
+[0m[38;2;0;255;0;1m[  2%]:[0m compiling.release src\vrui\VRUIMenuMCM.cpp[0m
+[0m[38;2;0;255;0;1m[  2%]:[0m compiling.release src\vrui\VRUIPanel.cpp[0m
+[0m[38;2;0;255;0;1m[  2%]:[0m compiling.release src\vrui\VRUISettings.cpp[0m
+[0m[38;2;0;255;0;1m[  2%]:[0m compiling.release src\vrui\VRUISlider.cpp[0m
+[0m[38;2;0;255;0;1m[  3%]:[0m compiling.release src\vrui\VRUIToggleButton.cpp[0m
+[0m[38;2;0;255;0;1m[  3%]:[0m compiling.release src\vrui\VRUIWidget.cpp[0m
+[0m[38;2;0;255;0;1m[  3%]:[0m compiling.release build\.gens\ImmersiveUI\windows\x64\release\rules\commonlibsse-ng\plugin\plugin.cpp[0m
+[0m[1;38;2;255;0;0;1merror: [0mmain.cpp
+G:\Meus Mods\Base\projects\ImmersiveUI\src\vrui\VRUIWidget.h(69): error C2535: 'RE::NiNode *vrui::VRUIWidget::getNode(void) const': função membro já definida ou declarada
+G:\Meus Mods\Base\projects\ImmersiveUI\src\vrui\VRUIWidget.h(39): note: consulte a declaração de 'vrui::VRUIWidget::getNode'
+src\main.cpp(360): warning C4834: descartando o valor retornado da função com o atributo [[nodiscard]]
+src\main.cpp(367): warning C4834: descartando o valor retornado da função com o atributo [[nodiscard]]
+src\main.cpp(370): warning C4834: descartando o valor retornado da função com o atributo [[nodiscard]]
+
+  [38;2;255;255;0m> in [1msrc\main.cpp[0m

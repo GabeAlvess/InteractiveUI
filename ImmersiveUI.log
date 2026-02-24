@@ -1,0 +1,293 @@
+[2026-02-24 02:32:51.694] [log] [info] [main.cpp:401] ===================================================
+[2026-02-24 02:32:51.694] [log] [info] [main.cpp:402] ImmersiveUI v1-1-3-0 - LOADING
+[2026-02-24 02:32:51.694] [log] [info] [main.cpp:403] ===================================================
+[2026-02-24 02:32:51.697] [log] [info] [main.cpp:418] ImmersiveUI: Plugin loaded successfully!
+[2026-02-24 02:33:17.686] [log] [info] [main.cpp:350] ImmersiveUI: ===== kDataLoaded =====
+[2026-02-24 02:33:17.686] [log] [info] [VRUISettings.cpp:30] ImmersiveUI: Loading settings from 'Data/SKSE/Plugins/ImmersiveUI.ini'
+[2026-02-24 02:33:17.686] [log] [info] [VRMenuManager.cpp:51] ImmersiveUI: VRIK detected. We will attach UI to the 3rd person skeleton.
+[2026-02-24 02:33:17.686] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\laser.nif'
+[2026-02-24 02:33:17.686] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\laser.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:17.686] [log] [info] [VRMenuManager.cpp:93] ImmersiveUI: Laser pointer mesh loaded successfully.
+[2026-02-24 02:33:17.686] [log] [info] [VRMenuManager.cpp:99] ImmersiveUI: VRMenuManager initialized
+[2026-02-24 02:33:17.686] [log] [info] [main.cpp:254] ImmersiveUI: VRFrameUpdater input sink registered!
+[2026-02-24 02:33:17.686] [log] [info] [keyhandler.cpp:14] KeyHandler sink registered successfully.
+[2026-02-24 02:33:17.686] [log] [info] [keyhandler.cpp:37] Registering callback with handle 1 for key 0x42, event type DOWN
+[2026-02-24 02:33:17.686] [log] [info] [keyhandler.cpp:37] Registering callback with handle 2 for key 0x22, event type DOWN
+[2026-02-24 02:33:17.686] [log] [info] [keyhandler.cpp:37] Registering callback with handle 3 for key 0x22, event type UP
+[2026-02-24 02:33:17.686] [log] [info] [main.cpp:374] ImmersiveUI: Keys registered (F8=toggle, G=grip)
+[2026-02-24 02:33:17.699] [log] [info] [main.cpp:331] ImmersiveUI: First frame - update loop ACTIVE!
+[2026-02-24 02:33:33.933] [log] [info] [main.cpp:379] ImmersiveUI: ===== kPostLoadGame =====
+[2026-02-24 02:33:33.933] [log] [info] [main.cpp:76] ImmersiveUI: Creating demo menu...
+[2026-02-24 02:33:33.933] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot01.nif'
+[2026-02-24 02:33:33.933] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot01.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.933] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Decr_fMenuScale' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.933] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\-.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.933] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '-' (L='-', S='')
+[2026-02-24 02:33:33.933] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Label_fMenuScale' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.934] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\M.nif'
+[2026-02-24 02:33:33.934] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\M.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.935] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\E.nif'
+[2026-02-24 02:33:33.935] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\E.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.935] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\N.nif'
+[2026-02-24 02:33:33.935] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\N.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.935] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\U.nif'
+[2026-02-24 02:33:33.935] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\U.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.936] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\S.nif'
+[2026-02-24 02:33:33.936] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\S.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.936] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\C.nif'
+[2026-02-24 02:33:33.936] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\C.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.936] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\A.nif'
+[2026-02-24 02:33:33.936] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\A.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.937] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\L.nif'
+[2026-02-24 02:33:33.937] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\L.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.937] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\:.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.937] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\0.nif'
+[2026-02-24 02:33:33.937] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\0.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.937] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\..nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.937] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\8.nif'
+[2026-02-24 02:33:33.937] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\8.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.937] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button 'Menu Scale: 0.80' (L='Menu Scale: 0.80', S='')
+[2026-02-24 02:33:33.937] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Incr_fMenuScale' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.937] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\+.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.937] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '+' (L='+', S='')
+[2026-02-24 02:33:33.937] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Decr_fButtonSpacing' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.937] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\-.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.937] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '-' (L='-', S='')
+[2026-02-24 02:33:33.937] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Label_fButtonSpacing' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.937] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\B.nif'
+[2026-02-24 02:33:33.937] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\B.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.938] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\T.nif'
+[2026-02-24 02:33:33.938] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\T.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.938] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\O.nif'
+[2026-02-24 02:33:33.938] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\O.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.938] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\P.nif'
+[2026-02-24 02:33:33.938] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\P.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.939] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\I.nif'
+[2026-02-24 02:33:33.939] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\I.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.939] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\G.nif'
+[2026-02-24 02:33:33.939] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\G.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.939] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\:.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.939] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\3.nif'
+[2026-02-24 02:33:33.939] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\3.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.939] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\..nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.939] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\6.nif'
+[2026-02-24 02:33:33.939] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\6.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.939] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button 'Button Spacing: 3.60' (L='Button Spacing: 3.60', S='')
+[2026-02-24 02:33:33.939] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Incr_fButtonSpacing' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.939] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\+.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.939] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '+' (L='+', S='')
+[2026-02-24 02:33:33.940] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Decr_fMenuOffsetY' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.940] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\-.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.940] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '-' (L='-', S='')
+[2026-02-24 02:33:33.940] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Label_fMenuOffsetY' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.940] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\Y.nif'
+[2026-02-24 02:33:33.940] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\Y.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.940] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\(.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.940] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\F.nif'
+[2026-02-24 02:33:33.940] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\F.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.940] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\R.nif'
+[2026-02-24 02:33:33.940] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\R.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.941] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\W.nif'
+[2026-02-24 02:33:33.941] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\W.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.941] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\D.nif'
+[2026-02-24 02:33:33.941] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\D.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.941] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\).nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.941] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\:.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.941] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\1.nif'
+[2026-02-24 02:33:33.941] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\1.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.941] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\..nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.941] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\5.nif'
+[2026-02-24 02:33:33.941] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\5.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.941] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button 'Pos Y (Forward): 10.50' (L='Pos Y (Forward): 10.50', S='')
+[2026-02-24 02:33:33.941] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Incr_fMenuOffsetY' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.941] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\+.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.941] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '+' (L='+', S='')
+[2026-02-24 02:33:33.941] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Decr_fMenuOffsetZ' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.942] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\-.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.942] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '-' (L='-', S='')
+[2026-02-24 02:33:33.942] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Label_fMenuOffsetZ' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.942] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\Z.nif'
+[2026-02-24 02:33:33.942] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\Z.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.942] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\(.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.942] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\).nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.942] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\:.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.942] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\..nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.942] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button 'Pos Z (Up): 1.50' (L='Pos Z (Up): 1.50', S='')
+[2026-02-24 02:33:33.942] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Incr_fMenuOffsetZ' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.942] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\+.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.942] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '+' (L='+', S='')
+[2026-02-24 02:33:33.942] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Decr_fMenuRotX' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.942] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\-.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.942] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '-' (L='-', S='')
+[2026-02-24 02:33:33.942] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Label_fMenuRotX' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.942] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\X.nif'
+[2026-02-24 02:33:33.942] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\X.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.942] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\(.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.942] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\H.nif'
+[2026-02-24 02:33:33.942] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\H.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.942] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\).nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.942] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\:.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\9.nif'
+[2026-02-24 02:33:33.943] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\9.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\..nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button 'Rot X (Pitch): 90.00' (L='Rot X (Pitch): 90.00', S='')
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Incr_fMenuRotX' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\+.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '+' (L='+', S='')
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Decr_fMenuRotY' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\-.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '-' (L='-', S='')
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Label_fMenuRotY' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\(.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\).nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\:.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\-.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\2.nif'
+[2026-02-24 02:33:33.943] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\2.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\..nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button 'Rot Y (Roll): -20.00' (L='Rot Y (Roll): -20.00', S='')
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Incr_fMenuRotY' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\+.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '+' (L='+', S='')
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Decr_fMenuRotZ' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\-.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '-' (L='-', S='')
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Label_fMenuRotZ' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\(.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\).nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\:.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\-.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\..nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button 'Rot Z (Yaw): -90.00' (L='Rot Z (Yaw): -90.00', S='')
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Incr_fMenuRotZ' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.943] [log] [warning] [VRUIWidget.cpp:396] ImmersiveUI: BSModelDB::Demand failed for 'immersiveUI\font\+.nif' (tried 2 variations, last error=1)
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button '+' (L='+', S='')
+[2026-02-24 02:33:33.943] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Back' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\K.nif'
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\K.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.944] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button 'BACK' (L='BACK', S='')
+[2026-02-24 02:33:33.944] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Save' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\font\V.nif'
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\font\V.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.944] [log] [info] [VRUIButton.cpp:316] ImmersiveUI: Refreshed 3D labels for button 'SAVE INI' (L='SAVE INI', S='')
+[2026-02-24 02:33:33.944] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Save' loaded NIF 'immersiveUI\slot01.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot02.nif'
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot02.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.944] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Wait' loaded NIF 'immersiveUI\slot02.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot03.nif'
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot03.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.944] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'TweenMenu' loaded NIF 'immersiveUI\slot03.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot04.nif'
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot04.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.944] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Inventory' loaded NIF 'immersiveUI\slot04.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot05.nif'
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot05.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.944] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Magic' loaded NIF 'immersiveUI\slot05.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot06.nif'
+[2026-02-24 02:33:33.944] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot06.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.944] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Map' loaded NIF 'immersiveUI\slot06.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot07.nif'
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot07.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.945] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'Journal' loaded NIF 'immersiveUI\slot07.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot08.nif'
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot08.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.945] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot08.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot09.nif'
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot09.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.945] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'NextPage' loaded NIF 'immersiveUI\slot09.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot10.nif'
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot10.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.945] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot10.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot11.nif'
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot11.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.945] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot11.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot12.nif'
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot12.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.945] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot12.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot13.nif'
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot13.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.945] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot13.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot14.nif'
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot14.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.945] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot14.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.945] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot15.nif'
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot15.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.946] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot15.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot16.nif'
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot16.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.946] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot16.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot17.nif'
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot17.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.946] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot17.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot18.nif'
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot18.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.946] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'NextPage' loaded NIF 'immersiveUI\slot18.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot19.nif'
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot19.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.946] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot19.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot20.nif'
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot20.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.946] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot20.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot21.nif'
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot21.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.946] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot21.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot22.nif'
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot22.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.946] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot22.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot23.nif'
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot23.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.946] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot23.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot24.nif'
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot24.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.946] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot24.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot25.nif'
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot25.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.946] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot25.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot26.nif'
+[2026-02-24 02:33:33.946] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot26.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.946] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot26.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot27.nif'
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot27.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.947] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'NextPage' loaded NIF 'immersiveUI\slot27.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot28.nif'
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot28.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.947] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot28.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot29.nif'
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot29.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.947] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot29.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot30.nif'
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot30.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.947] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot30.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot31.nif'
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot31.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.947] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot31.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot32.nif'
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot32.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.947] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot32.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot33.nif'
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot33.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.947] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot33.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot34.nif'
+[2026-02-24 02:33:33.947] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot34.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.947] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot34.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.948] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot35.nif'
+[2026-02-24 02:33:33.948] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot35.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.948] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'None' loaded NIF 'immersiveUI\slot35.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.948] [log] [info] [VRUIWidget.cpp:390] ImmersiveUI: BSModelDB::Demand success for path: 'immersiveUI\slot36.nif'
+[2026-02-24 02:33:33.948] [log] [info] [VRUIWidget.cpp:403] ImmersiveUI: Loaded NIF 'immersiveUI\slot36.nif' via BSModelDB::Demand and cached it
+[2026-02-24 02:33:33.948] [log] [info] [VRUIButton.cpp:59] ImmersiveUI: Button 'NextPage' loaded NIF 'immersiveUI\slot36.nif' with scale 0.02 and rotation [90, 0, 180]
+[2026-02-24 02:33:33.948] [log] [info] [VRMenuManager.cpp:148] ImmersiveUI: Panel registered (total: 1)
+[2026-02-24 02:33:33.948] [log] [info] [VRMenuManager.cpp:148] ImmersiveUI: Panel registered (total: 2)
+[2026-02-24 02:33:33.948] [log] [info] [main.cpp:228] ImmersiveUI: Menu created with 36 slots (4 pages of 9).
+[2026-02-24 02:33:36.015] [log] [info] [VRMenuManager.cpp:239] ImmersiveUI: Menu toggled OPEN
+[2026-02-24 02:33:36.015] [log] [info] [VRUIWidget.cpp:112] ImmersiveUI: Widget 'MainPanel' attached to node 'NPC L Hand [LHnd]'
+[2026-02-24 02:33:36.015] [log] [info] [VRUIPanel.cpp:20] ImmersiveUI: Panel 'MainPanel' attached directly to node 'NPC L Hand [LHnd]'
+[2026-02-24 02:33:36.015] [log] [info] [VRUIPanel.cpp:45] ImmersiveUI: Showing panel 'MainPanel'
+[2026-02-24 02:33:45.771] [log] [info] [VRMenuManager.cpp:239] ImmersiveUI: Menu toggled CLOSED
+[2026-02-24 02:33:45.771] [log] [info] [VRUIPanel.cpp:54] ImmersiveUI: Hiding panel 'MainPanel'
+[2026-02-24 02:33:55.722] [log] [info] [VRMenuManager.cpp:239] ImmersiveUI: Menu toggled OPEN
+[2026-02-24 02:33:55.722] [log] [info] [VRUIWidget.cpp:112] ImmersiveUI: Widget 'MainPanel' attached to node 'NPC L Hand [LHnd]'
+[2026-02-24 02:33:55.722] [log] [info] [VRUIPanel.cpp:20] ImmersiveUI: Panel 'MainPanel' attached directly to node 'NPC L Hand [LHnd]'
+[2026-02-24 02:33:55.722] [log] [info] [VRUIPanel.cpp:45] ImmersiveUI: Showing panel 'MainPanel'
+[2026-02-24 02:33:58.221] [log] [info] [VRMenuManager.cpp:239] ImmersiveUI: Menu toggled CLOSED
+[2026-02-24 02:33:58.221] [log] [info] [VRUIPanel.cpp:54] ImmersiveUI: Hiding panel 'MainPanel'

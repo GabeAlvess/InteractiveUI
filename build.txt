@@ -1,0 +1,31 @@
+[0m[38;2;0;255;0;1m[ 12%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BGSSaveLoadManager.cpp[0m
+[0m[38;2;0;255;0;1m[ 12%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BGSSkillPerkTreeNode.cpp[0m
+[0m[38;2;0;255;0;1m[ 12%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BGSStoryTeller.cpp[0m
+[0m[38;2;0;255;0;1m[ 13%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\bhkRigidBody.cpp[0m
+[0m[38;2;0;255;0;1m[ 13%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BipedAnim.cpp[0m
+[0m[38;2;0;255;0;1m[ 13%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BookMenu.cpp[0m
+[0m[38;2;0;255;0;1m[ 14%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BooksRead.cpp[0m
+[0m[38;2;0;255;0;1m[ 14%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSAtomic.cpp[0m
+[0m[38;2;0;255;0;1m[ 14%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSAudioManager.cpp[0m
+[0m[38;2;0;255;0;1m[ 14%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSDirectInputManager.cpp[0m
+[0m[38;2;0;255;0;1m[ 15%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSEffectShaderData.cpp[0m
+[0m[38;2;0;255;0;1m[ 15%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSExtraData.cpp[0m
+[0m[38;2;0;255;0;1m[ 15%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSFaceGenNiNode.cpp[0m
+[0m[38;2;0;255;0;1m[ 15%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSFadeNode.cpp[0m
+[0m[38;2;0;255;0;1m[ 16%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSFixedString.cpp[0m
+[0m[38;2;0;255;0;1m[ 16%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSGamepadDevice.cpp[0m
+[0m[38;2;0;255;0;1m[ 16%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSGeometry.cpp[0m
+[0m[38;2;0;255;0;1m[ 16%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSHandleRefObject.cpp[0m
+[0m[38;2;0;255;0;1m[ 17%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSInputDevice.cpp[0m
+[0m[38;2;0;255;0;1m[ 17%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSInputDeviceFactory.cpp[0m
+[0m[38;2;0;255;0;1m[ 17%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSInputDeviceManager.cpp[0m
+[0m[38;2;0;255;0;1m[ 17%]:[0m compiling.release lib\commonlibsse-ng\src\RE\B\BSInputEventQueue.cpp[0m
+[0m[1;38;2;255;0;0;1merror: [0mBSInputEventQueue.cpp
+lib\commonlibsse-ng\include\RE/B/ButtonEvent.h(94,36): error C2607: falha na declaração estática
+	static_assert(sizeof(ButtonEvent) == 0x28);
+	                                  ^
+lib\commonlibsse-ng\include\RE/B/BSInputEventQueue.h(153,42): error C2607: falha na declaração estática
+	static_assert(sizeof(BSInputEventQueue) == 0x20);
+	                                        ^
+
+  [38;2;255;255;0m> in [1mlib\commonlibsse-ng\src\RE\B\BSInputEventQueue.cpp[0m

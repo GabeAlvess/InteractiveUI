@@ -1,0 +1,1444 @@
+CRASH TIME: 2026-02-23 23:32:39
+Skyrim VR v1.4.15
+CrashLoggerSSE v1-16-0-0 Oct  7 2025 06:54:42
+
+Unhandled exception "EXCEPTION_ACCESS_VIOLATION" at 0x7FF64EDBEDFB SkyrimVR.exe+0C6EDFB	mov ebp, [rdi+0x08]
+Exception Flags: 0x00000000 (Continuable)
+Number of Parameters: 2
+Exception Thread ID: 27092
+Access Violation: Tried to read memory at 0x2E253E3034F0
+
+PROCESS INFO:
+	Process ID: 27520
+	Crash Thread ID: 27092
+	Process Uptime: 00:00:42 (42491ms)
+	Working Directory: G:\SteamLibrary\steamapps\common\SkyrimVR
+	Command Line: "G:\SteamLibrary\steamapps\common\SkyrimVR\\SkyrimVR.exe"
+	Executable MD5: 6cc5baea600d6a688a5fa5aa67a54248
+	Executable Size: 35530960 bytes
+	Executable Modified: 2025-04-11 21:17:51
+	Elevated: No
+
+SYSTEM SPECS:
+	OS: Microsoft Windows 11 Pro v10.0.26200
+	CPU: GenuineIntel 13th Gen Intel(R) Core(TM) i5-13600KF
+	CPU Cores: 20 logical, 14 physical, 1 packages
+	GPU #1: Nvidia GA102 [GeForce RTX 3080 Lite Hash Rate]
+	GPU #2: Microsoft Basic Render Driver
+	PHYSICAL MEMORY: 22.81 GB/31.83 GB
+	VIRTUAL MEMORY: 67.22 GB/131072.00 GB
+	PROCESS MEMORY: Working Set: 2775.76 MB, Private: 7551.72 MB, Peak: 2775.76 MB
+	PAGE FAULTS: 979029 (Peak: 2910593024)
+	GPU MEMORY: 0.94/9.07 GB
+	Detected Virtual Machine: Microsoft Hyper-V (100%)
+
+VR SPECS:
+	Model: Oculus Quest2
+	Manufacturer: Oculus
+	Driver Version: <error: TrackedProp_UnknownProperty>
+	Tracking System: oculus
+	Display Frequency (Hz): 72.00
+	IPD (meters): 0.07
+	Render Target Size: 2592x2592
+
+PROBABLE CALL STACK:
+	[ 0] 0x7FF64EDBEDFB      SkyrimVR.exe+0C6EDFB -> 67847+0x4B	mov ebp, [rdi+0x08]
+	[ 1] 0x7FF64EDEFE86      SkyrimVR.exe+0C9FE86 -> 68937+0x3126	mov rbx, [rsp+0x468]
+	[ 2] 0x7FF64F475974      SkyrimVR.exe+1325974 -> 100430+0xAF4	inc ebx
+	[ 3] 0x7FF64EDF11DF      SkyrimVR.exe+0CA11DF -> 69002+0xFFF	mov rax, [rdi]
+	[ 4] 0x7FF64EDEF56E      SkyrimVR.exe+0C9F56E -> 68937+0x280E	
+	[ 5] 0x7FF64EECEE58      SkyrimVR.exe+0D7EE58 -> 74040+0x7878	movzx edi, al
+	[ 6] 0x7FF64EEC6D09      SkyrimVR.exe+0D76D09 -> 73882+0x69F9	movzx ebx, al
+	[ 7] 0x7FF64E319E78      SkyrimVR.exe+01C9E78 -> 15220+0x1B98	lea eax, [rbp-0x10000000]
+	[ 8] 0x7FF64EEC7595      SkyrimVR.exe+0D77595 -> 73882+0x7285	mov edi, eax
+	[ 9] 0x7FF64EEC760A      SkyrimVR.exe+0D7760A -> 74040+0x2A	mov edi, eax
+	[10] 0x7FF99CCC87EA   ImmersiveUI.dll+00387EA
+	[11] 0x7FF99CCB5235   ImmersiveUI.dll+0025235
+	[12] 0x7FF99CCAFD69   ImmersiveUI.dll+001FD69
+	[13] 0x7FF99F3E6371 sksevr_1_4_15.dll+0096371
+	[14] 0x7FF99F35BF88 sksevr_1_4_15.dll+000BF88
+	[15] 0x7FF64E707EED      SkyrimVR.exe+05B7EED -> 35551+0x117D	cmp dword ptr [0x00007FF6500D1D88], 0x02
+	[16] 0x7FF64E71060C      SkyrimVR.exe+05C060C -> 35620+0x17CC	mov rcx, rbx
+	[17] 0x7FF64ED984ED      SkyrimVR.exe+0C484ED -> 66989+0x5D6D	mov rcx, [0x00007FF651213AA8]
+	[18] 0x7FFA76E1E8D7      KERNEL32.DLL+002E8D7
+	[19] 0x7FFA779AC40C         ntdll.dll+008C40C
+
+REGISTERS:
+	RAX 0x7FF65121FAF0     (void* -> SkyrimVR.exe+30CFAF0	rol bh, 0x5D)
+	RCX 0x8000022B         (size_t) [2147484203]
+	RDX 0x2A10             (size_t) [10768]
+	RBX 0x760207EEC8       (BSResourceNiBinaryStream*)
+	RSP 0x760207E7C0       (void*)
+	RBP 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	RSI 0x1FADF5E8398      (void*)
+	RDI 0x2E253E3034E8     (size_t) [50737492014312]
+	R8  0x2E253E303500     (size_t) [50737492014336]
+	R9  0x7FFA5866124A     (void* -> VCRUNTIME140.dll+001124A	mov ecx, [rdx])
+	R10 0x7FFA58650000     (void*)
+	R11 0x0                (size_t) [0]
+	R12 0x7FF65121FAF0     (void* -> SkyrimVR.exe+30CFAF0	rol bh, 0x5D)
+	R13 0x7FF6512BC0B0     (void* -> SkyrimVR.exe+316C0B0	cmp rax, 0x7FF64F94)
+	R14 0x0                (size_t) [0]
+	R15 0x760207EC90       (void*)
+
+STACK:
+	[RSP+0   ] 0x1FBF03A5C90      (void*)
+	[RSP+8   ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+10  ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+18  ] 0x7FF64EE0CC36     (void* -> SkyrimVR.exe+0CBCC36	mov rax, [rsp+0x40])
+	[RSP+20  ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+28  ] 0x1FADF5E8398      (void*)
+	[RSP+30  ] 0x7                (size_t) [7]
+	[RSP+38  ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+40  ] 0x0                (size_t) [0]
+	[RSP+48  ] 0x760207EEC8       (BSResourceNiBinaryStream*)
+	[RSP+50  ] 0x1FADF5E8398      (void*)
+	[RSP+58  ] 0x7FF64EDEFE86     (void* -> SkyrimVR.exe+0C9FE86	mov rbx, [rsp+0x468])
+	[RSP+60  ] 0x4                (size_t) [4]
+	[RSP+68  ] 0x760207EEC8       (BSResourceNiBinaryStream*)
+	[RSP+70  ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+78  ] 0x0                (size_t) [0]
+	[RSP+80  ] 0x7600000001       (size_t) [506806140929]
+	[RSP+88  ] 0x760207EBB8       (void*)
+	[RSP+90  ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+98  ] 0x0                (size_t) [0]
+	[RSP+A0  ] 0x7365727574786574 (size_t) [8315178135800276340]
+	[RSP+A8  ] 0x64642E747365745C (size_t) [7233957979150971996]
+	[RSP+B0  ] 0x7602070073       (void*)
+	[RSP+B8  ] 0x0                (size_t) [0]
+	[RSP+C0  ] 0x0                (size_t) [0]
+	[RSP+C8  ] 0x0                (size_t) [0]
+	[RSP+D0  ] 0x760207E820       (void*)
+	[RSP+D8  ] 0x48               (size_t) [72]
+	[RSP+E0  ] 0x0                (size_t) [0]
+	[RSP+E8  ] 0x1FBE71C44F0      (void*)
+	[RSP+F0  ] 0x760207EA90       (void*)
+	[RSP+F8  ] 0x7FF9EE4CBCEF     (void* -> usvfs_x64.dll+009BCEF	mov rax, rbx)
+	[RSP+100 ] 0x1F99E6C0000      (void*)
+	[RSP+108 ] 0x7FFA742D28DD     (void* -> KERNELBASE.dll+00428DD	nop [rax+rax*1], eax)
+	[RSP+110 ] 0x7FFA77A824E0     (void* -> ntdll.dll+01624E0	jmp 0x00007FFA40010E54)
+	[RSP+118 ] 0xCA42F454A81C     (size_t) [222388915841052]
+	[RSP+120 ] 0x1F9FEFCEFD0      (void*)
+	[RSP+128 ] 0x7FFA70C1CEF8     (void* -> d3d11.dll+01FCEF8	test [rbx], ecx)
+	[RSP+130 ] 0x760207EBB8       (void*)
+	[RSP+138 ] 0x0                (size_t) [0]
+	[RSP+140 ] 0x760207E9F0       (void*)
+	[RSP+148 ] 0x1FBF03A7E88      (void*)
+	[RSP+150 ] 0x1FBF03A7E80      (void*)
+	[RSP+158 ] 0x7FFA70A95F86     (void* -> d3d11.dll+0075F86	cmp eax, 0x887A0005)
+	[RSP+160 ] 0x1F9FEFCE790      (void*)
+	[RSP+168 ] 0x0                (size_t) [0]
+	[RSP+170 ] 0x0                (size_t) [0]
+	[RSP+178 ] 0x7FF64EDCBD48     (void* -> SkyrimVR.exe+0C7BD48	test eax, eax)
+	[RSP+180 ] 0x0                (size_t) [0]
+	[RSP+188 ] 0x7FFA70C1CEF8     (void* -> d3d11.dll+01FCEF8	test [rbx], ecx)
+	[RSP+190 ] 0x1FBF03A7E88      (void*)
+	[RSP+198 ] 0x760207EBB8       (void*)
+	[RSP+1A0 ] 0x760207EBE0       (void*)
+	[RSP+1A8 ] 0x1F9FEFCEFD0      (void*)
+	[RSP+1B0 ] 0x0                (size_t) [0]
+	[RSP+1B8 ] 0x7FFA70A57213     (void* -> d3d11.dll+0037213	add rsp, 0x170)
+	[RSP+1C0 ] 0x0                (size_t) [0]
+	[RSP+1C8 ] 0x7FF900000000     (size_t) [140707423584256]
+	[RSP+1D0 ] 0x1FBF03A7E88      (void*)
+	[RSP+1D8 ] 0x1FBF03A7E80      (void*)
+	[RSP+1E0 ] 0x1F900000000      (size_t) [2168958484480]
+	[RSP+1E8 ] 0x1FBF03A7E88      (void*)
+	[RSP+1F0 ] 0xFFFFFFFF0000B100 (size_t) [uint: 18446744069414629632 int: -4294921984]
+	[RSP+1F8 ] 0x7FF600000001     (size_t) [140694538682369]
+	[RSP+200 ] 0x0                (size_t) [0]
+	[RSP+208 ] 0x760207EB01       (void*)
+	[RSP+210 ] 0xFFFFFFFF00000003 (size_t) [uint: 18446744069414584323 int: -4294967293]
+	[RSP+218 ] 0x7FF64EDE2A01     (void* -> SkyrimVR.exe+0C92A01	add esp, 0x28)
+	[RSP+220 ] 0x1F9B2880500      (void*)
+	[RSP+228 ] 0x1F9B28805D0      (void*)
+	[RSP+230 ] 0x0                (size_t) [0]
+	[RSP+238 ] 0x0                (size_t) [0]
+	[RSP+240 ] 0x0                (size_t) [0]
+	[RSP+248 ] 0x0                (size_t) [0]
+	[RSP+250 ] 0x760207E988       (void*)
+	[RSP+258 ] 0x760207EBB8       (void*)
+	[RSP+260 ] 0x0                (size_t) [0]
+	[RSP+268 ] 0x7FF64EDE2A6E     (void* -> SkyrimVR.exe+0C92A6E	xor eax, eax)
+	[RSP+270 ] 0x760207EBE0       (void*)
+	[RSP+278 ] 0x7FF64EDE2A6E     (void* -> SkyrimVR.exe+0C92A6E	xor eax, eax)
+	[RSP+280 ] 0x0                (size_t) [0]
+	[RSP+288 ] 0x760207EC00       (void*)
+	[RSP+290 ] 0x4                (size_t) [4]
+	[RSP+298 ] 0x7FF64EDE2A6E     (void* -> SkyrimVR.exe+0C92A6E	xor eax, eax)
+	[RSP+2A0 ] 0x1F9B2880590      (void*)
+	[RSP+2A8 ] 0x4                (size_t) [4]
+	[RSP+2B0 ] 0x0                (size_t) [0]
+	[RSP+2B8 ] 0x7FF64EDE2A6E     (void* -> SkyrimVR.exe+0C92A6E	xor eax, eax)
+	[RSP+2C0 ] 0x4                (size_t) [4]
+	[RSP+2C8 ] 0x7FF64EDE2336     (void* -> SkyrimVR.exe+0C92336	add r14, rdi)
+	[RSP+2D0 ] 0x0                (size_t) [0]
+	[RSP+2D8 ] 0x1FBE98B88A0      (void*)
+	[RSP+2E0 ] 0x4                (size_t) [4]
+	[RSP+2E8 ] 0x7FF64EDE2336     (void* -> SkyrimVR.exe+0C92336	add r14, rdi)
+	[RSP+2F0 ] 0x1F9B2880590      (void*)
+	[RSP+2F8 ] 0x7FF64EDE2A6E     (void* -> SkyrimVR.exe+0C92A6E	xor eax, eax)
+	[RSP+300 ] 0x760207ED49       (void*)
+	[RSP+308 ] 0x4                (size_t) [4]
+	[RSP+310 ] 0x0                (size_t) [0]
+	[RSP+318 ] 0x1FBE98B88F4      (void*)
+	[RSP+320 ] 0x4                (size_t) [4]
+	[RSP+328 ] 0x7FF64EDE2336     (void* -> SkyrimVR.exe+0C92336	add r14, rdi)
+	[RSP+330 ] 0x1F9B2880590      (void*)
+	[RSP+338 ] 0x4                (size_t) [4]
+	[RSP+340 ] 0x760207ED49       (void*)
+	[RSP+348 ] 0x7FF64EDE2A6E     (void* -> SkyrimVR.exe+0C92A6E	xor eax, eax)
+	[RSP+350 ] 0x760207EEC8       (BSResourceNiBinaryStream*)
+	[RSP+358 ] 0x7FF64EDE144F     (void* -> SkyrimVR.exe+0C9144F	mov ebx, eax)
+	[RSP+360 ] 0x0                (size_t) [0]
+	[RSP+368 ] 0x760207ECD8       (char*) "
+"
+	[RSP+370 ] 0x4                (size_t) [4]
+	[RSP+378 ] 0x7FF64EDE2336     (void* -> SkyrimVR.exe+0C92336	add r14, rdi)
+	[RSP+380 ] 0x1F9B2880590      (void*)
+	[RSP+388 ] 0x4                (size_t) [4]
+	[RSP+390 ] 0x1FADF5E8340      (BSShaderTextureSet*)
+	[RSP+398 ] 0x4                (size_t) [4]
+	[RSP+3A0 ] 0x1F90000005A      (size_t) [2168958484570]
+	[RSP+3A8 ] 0x760207ED49       (void*)
+	[RSP+3B0 ] 0x1F9B2881C62      (char*) "
+"
+	[RSP+3B8 ] 0x0                (size_t) [0]
+	[RSP+3C0 ] 0x7                (size_t) [7]
+	[RSP+3C8 ] 0x760207EC80       (void*)
+	[RSP+3D0 ] 0x7FF6512BC0B0     (void* -> SkyrimVR.exe+316C0B0	cmp rax, 0x7FF64F94)
+	[RSP+3D8 ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+3E0 ] 0x760207EEC8       (BSResourceNiBinaryStream*)
+	[RSP+3E8 ] 0x7FF64EDE144F     (void* -> SkyrimVR.exe+0C9144F	mov ebx, eax)
+	[RSP+3F0 ] 0x7600000056       (size_t) [506806141014]
+	[RSP+3F8 ] 0x1FADF5E8340      (BSShaderTextureSet*)
+	[RSP+400 ] 0x1F9FD201120      (BSResource::`anonymous namespace'::LooseFileStream*)
+	[RSP+408 ] 0x0                (size_t) [0]
+	[RSP+410 ] 0x760207EC80       (void*)
+	[RSP+418 ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+420 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+428 ] 0x7FF64EE0CC36     (void* -> SkyrimVR.exe+0CBCC36	mov rax, [rsp+0x40])
+	[RSP+430 ] 0x760207EEC8       (BSResourceNiBinaryStream*)
+	[RSP+438 ] 0x1FBE98B8860      (BSLightingShaderMaterial*)
+		Feature: kDefault
+		Type: "kLighting"
+	[RSP+440 ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+448 ] 0x7FF64EDF0264     (void* -> SkyrimVR.exe+0CA0264	nop)
+	[RSP+450 ] 0x1                (size_t) [1]
+	[RSP+458 ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+460 ] 0x760207EEC8       (BSResourceNiBinaryStream*)
+	[RSP+468 ] 0x7FF64F45EAA9     (void* -> SkyrimVR.exe+130EAA9	add [rbx+0x08], eax)
+	[RSP+470 ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+478 ] 0x7FF64EE0CC36     (void* -> SkyrimVR.exe+0CBCC36	mov rax, [rsp+0x40])
+	[RSP+480 ] 0x760207EEC8       (BSResourceNiBinaryStream*)
+	[RSP+488 ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+490 ] 0x760207EEC8       (BSResourceNiBinaryStream*)
+	[RSP+498 ] 0x7FF64EDEB93F     (void* -> SkyrimVR.exe+0C9B93F	mov eax, [rdi+0x10C])
+	[RSP+4A0 ] 0x760207EEC8       (BSResourceNiBinaryStream*)
+	[RSP+4A8 ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+4B0 ] 0x1FADF5E8340      (BSShaderTextureSet*)
+	[RSP+4B8 ] 0x7FF64F475974     (void* -> SkyrimVR.exe+1325974	inc ebx)
+	[RSP+4C0 ] 0x0                (size_t) [0]
+	[RSP+4C8 ] 0x9                (size_t) [9]
+	[RSP+4D0 ] 0x2E253E303500     (size_t) [50737492014336]
+	[RSP+4D8 ] 0x0                (size_t) [0]
+	[RSP+4E0 ] 0x3C9B409B00000001 (size_t) [4367155298129936385]
+	[RSP+4E8 ] 0x1FB00000000      (size_t) [2177548419072]
+	[RSP+4F0 ] 0x1FADF5E8340      (BSShaderTextureSet*)
+	[RSP+4F8 ] 0x7FF64F6F9120     (void* -> SkyrimVR.exe+15A9120	)
+	[RSP+500 ] 0x760207ED49       (void*)
+	[RSP+508 ] 0x7FF64EDF11DF     (void* -> SkyrimVR.exe+0CA11DF	mov rax, [rdi])
+	[RSP+510 ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+518 ] 0x7FF60000000A     (size_t) [140694538682378]
+	[RSP+520 ] 0x7600000004       (size_t) [506806140932]
+	[RSP+528 ] 0x7600000001       (size_t) [506806140929]
+	[RSP+530 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+538 ] 0x7FF64F6E84F8     (void* -> SkyrimVR.exe+15984F8	test al, 0xBA)
+	[RSP+540 ] 0x760207ED38       (void*)
+	[RSP+548 ] 0x7FF64F6E84F8     (void* -> SkyrimVR.exe+15984F8	test al, 0xBA)
+	[RSP+550 ] 0x760207ED18       (void*)
+	[RSP+558 ] 0x1FB66366710      (ScrapHeap*)
+	[RSP+560 ] 0x1FBF2BC6800      (void*)
+	[RSP+568 ] 0x7FF900000040     (size_t) [140707423584320]
+	[RSP+570 ] 0x7600000008       (size_t) [506806140936]
+	[RSP+578 ] 0x1FB66366710      (ScrapHeap*)
+	[RSP+580 ] 0x1FBF2BC7500      (void*)
+	[RSP+588 ] 0x40               (size_t) [64]
+	[RSP+590 ] 0x760000000F       (size_t) [506806140943]
+	[RSP+598 ] 0x7FF64EDBAA5B     (void* -> SkyrimVR.exe+0C6AA5B	mov rax, rbx)
+	[RSP+5A0 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+5A8 ] 0x1FBF03A4130      (void*)
+	[RSP+5B0 ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+5B8 ] 0x760207F958       (void*)
+	[RSP+5C0 ] 0x1FBF03A4158      (void*)
+	[RSP+5C8 ] 0x760207EEC8       (BSResourceNiBinaryStream*)
+	[RSP+5D0 ] 0x760207EEC8       (BSResourceNiBinaryStream*)
+	[RSP+5D8 ] 0x760207EF00       (BSStream*)
+		Header: author:  version: 100 processScript: Exported using Outfit Studio. exportScript: 
+		inputFilePath: "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+5E0 ] 0x1F9FD20C098      (char*) "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+5E8 ] 0x7FF64EDEF56E     (void* -> SkyrimVR.exe+0C9F56E	)
+	[RSP+5F0 ] 0x760207EE00       (void*)
+	[RSP+5F8 ] 0x0                (size_t) [0]
+	[RSP+600 ] 0xFFFFFFFF         (size_t) [4294967295]
+	[RSP+608 ] 0x0                (size_t) [0]
+	[RSP+610 ] 0x760207F008       (char*) "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+618 ] 0x7FF64EECEE58     (void* -> SkyrimVR.exe+0D7EE58	movzx edi, al)
+	[RSP+620 ] 0x0                (size_t) [0]
+	[RSP+628 ] 0x128              (size_t) [296]
+	[RSP+630 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+638 ] 0x0                (size_t) [0]
+	[RSP+640 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+648 ] 0x7FF64F709250     (void* -> SkyrimVR.exe+15B9250	adc [rcx+0x7FF64E31], bl)
+	[RSP+650 ] 0x0                (size_t) [0]
+	[RSP+658 ] 0x1FB663667A8      (void*)
+	[RSP+660 ] 0x1F9FD20C098      (char*) "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+668 ] 0x7FF64EEC6D09     (void* -> SkyrimVR.exe+0D76D09	movzx ebx, al)
+	[RSP+670 ] 0x1FB66366040      (void*)
+	[RSP+678 ] 0x760207EF30       (char*) "'"
+	[RSP+680 ] 0x0                (size_t) [0]
+	[RSP+688 ] 0x1F9FD20C098      (char*) "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+690 ] 0x0                (size_t) [0]
+	[RSP+698 ] 0x3464393600000000 (size_t) [3775205291734335488]
+	[RSP+6A0 ] 0xD                (size_t) [13]
+	[RSP+6A8 ] 0x0                (size_t) [0]
+	[RSP+6B0 ] 0x1FB663667A8      (void*)
+	[RSP+6B8 ] 0x760207EEFC       (void*)
+	[RSP+6C0 ] 0x1FB66366A20      (void*)
+	[RSP+6C8 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+6D0 ] 0x52               (size_t) [82]
+	[RSP+6D8 ] 0x0                (size_t) [0]
+	[RSP+6E0 ] 0x760207EFC0       (void*)
+	[RSP+6E8 ] 0x1                (size_t) [1]
+	[RSP+6F0 ] 0x20               (size_t) [32]
+	[RSP+6F8 ] 0x7FFA77A49A89     (void* -> ntdll.dll+0129A89	mov rbx, [rsp+0x4F0])
+	[RSP+700 ] 0x7FFA77A990F0     (char*) "R"
+	[RSP+708 ] 0x7FF64F9432F0     (void* -> SkyrimVR.exe+17F32F0	mov al, 0xCE)
+	[RSP+710 ] 0x56CF             (size_t) [22223]
+	[RSP+718 ] 0x7FF64EE0CBE0     (void* -> SkyrimVR.exe+0CBCBE0	push rbx)
+	[RSP+720 ] 0x7FF64EE0CC50     (void* -> SkyrimVR.exe+0CBCC50	push rbx)
+	[RSP+728 ] 0x1F9FD201120      (BSResource::`anonymous namespace'::LooseFileStream*)
+	[RSP+730 ] 0x0                (size_t) [0]
+	[RSP+738 ] 0x56CF             (size_t) [22223]
+	[RSP+740 ] 0x7FF64F6F8318     (void* -> SkyrimVR.exe+15A8318	mov al, 0xE0)
+	[RSP+748 ] 0x64               (size_t) [100]
+	[RSP+750 ] 0x0                (size_t) [0]
+	[RSP+758 ] 0x760207F528       (void*)
+	[RSP+760 ] 0x0                (size_t) [0]
+	[RSP+768 ] 0x760207F3D0       (void*)
+	[RSP+770 ] 0x27               (size_t) [39]
+	[RSP+778 ] 0x7FFA77A97F42     (void* -> ntdll.dll+0177F42	add [rax], al)
+	[RSP+780 ] 0x0                (size_t) [0]
+	[RSP+788 ] 0x6F70784500000000 (size_t) [8030050373349670912]
+	[RSP+790 ] 0x6973752064657472 (size_t) [7598545778287932530]
+	[RSP+798 ] 0x696674754F20676E (size_t) [7594885868794439534]
+	[RSP+7A0 ] 0x6F69647574532074 (size_t) [8028058266390175860]
+	[RSP+7A8 ] 0x2E               (size_t) [46]
+	[RSP+7B0 ] 0x0                (size_t) [0]
+	[RSP+7B8 ] 0x0                (size_t) [0]
+	[RSP+7C0 ] 0x0                (size_t) [0]
+	[RSP+7C8 ] 0x0                (size_t) [0]
+	[RSP+7D0 ] 0x0                (size_t) [0]
+	[RSP+7D8 ] 0x0                (size_t) [0]
+	[RSP+7E0 ] 0x0                (size_t) [0]
+	[RSP+7E8 ] 0x0                (size_t) [0]
+	[RSP+7F0 ] 0x0                (size_t) [0]
+	[RSP+7F8 ] 0x0                (size_t) [0]
+	[RSP+800 ] 0x0                (size_t) [0]
+	[RSP+808 ] 0x0                (size_t) [0]
+	[RSP+810 ] 0x80000004         (size_t) [2147483652]
+	[RSP+818 ] 0x0                (size_t) [0]
+	[RSP+820 ] 0x0                (size_t) [0]
+	[RSP+828 ] 0x0                (size_t) [0]
+	[RSP+830 ] 0x0                (size_t) [0]
+	[RSP+838 ] 0x1                (size_t) [1]
+	[RSP+840 ] 0xC14020007        (size_t) [51875282951]
+	[RSP+848 ] 0x53454D5C61746164 (size_t) [6000287137708400996]
+	[RSP+850 ] 0x656D6D495C534548 (size_t) [7308617932141184328]
+	[RSP+858 ] 0x5C49556576697372 (size_t) [6649940219055928178]
+	[RSP+860 ] 0x696E2E726573616C (size_t) [7597060690283815276]
+	[RSP+868 ] 0x66               (size_t) [102]
+	[RSP+870 ] 0x0                (size_t) [0]
+	[RSP+878 ] 0x0                (size_t) [0]
+	[RSP+880 ] 0x0                (size_t) [0]
+	[RSP+888 ] 0x0                (size_t) [0]
+	[RSP+890 ] 0x0                (size_t) [0]
+	[RSP+898 ] 0x0                (size_t) [0]
+	[RSP+8A0 ] 0x0                (size_t) [0]
+	[RSP+8A8 ] 0x0                (size_t) [0]
+	[RSP+8B0 ] 0x0                (size_t) [0]
+	[RSP+8B8 ] 0x0                (size_t) [0]
+	[RSP+8C0 ] 0x0                (size_t) [0]
+	[RSP+8C8 ] 0x0                (size_t) [0]
+	[RSP+8D0 ] 0x0                (size_t) [0]
+	[RSP+8D8 ] 0x0                (size_t) [0]
+	[RSP+8E0 ] 0x0                (size_t) [0]
+	[RSP+8E8 ] 0x0                (size_t) [0]
+	[RSP+8F0 ] 0x0                (size_t) [0]
+	[RSP+8F8 ] 0x0                (size_t) [0]
+	[RSP+900 ] 0x0                (size_t) [0]
+	[RSP+908 ] 0x0                (size_t) [0]
+	[RSP+910 ] 0x0                (size_t) [0]
+	[RSP+918 ] 0x0                (size_t) [0]
+	[RSP+920 ] 0x0                (size_t) [0]
+	[RSP+928 ] 0x0                (size_t) [0]
+	[RSP+930 ] 0x0                (size_t) [0]
+	[RSP+938 ] 0x0                (size_t) [0]
+	[RSP+940 ] 0x0                (size_t) [0]
+	[RSP+948 ] 0x10100000000      (size_t) [1103806595072]
+	[RSP+950 ] 0x0                (size_t) [0]
+	[RSP+958 ] 0x7FF64F93F790     (void* -> SkyrimVR.exe+17EF790	)
+	[RSP+960 ] 0x1FBEF366E48      (void*)
+	[RSP+968 ] 0x700000007        (size_t) [30064771079]
+	[RSP+970 ] 0x40000000007      (size_t) [4398046511111]
+	[RSP+978 ] 0x7FF64F93F7B0     (void* -> SkyrimVR.exe+17EF7B0	cmp byte ptr [0x00007FF6CF8A4696], 0x00)
+	[RSP+980 ] 0x1FBF56190A0      (char*) "\"
+	[RSP+988 ] 0x700000007        (size_t) [30064771079]
+	[RSP+990 ] 0x100000007        (size_t) [4294967303]
+	[RSP+998 ] 0x7FF64F93F790     (void* -> SkyrimVR.exe+17EF790	)
+	[RSP+9A0 ] 0x0                (size_t) [0]
+	[RSP+9A8 ] 0x0                (size_t) [0]
+	[RSP+9B0 ] 0x100000000        (size_t) [4294967296]
+	[RSP+9B8 ] 0x7FF64F93F7D0     (void* -> SkyrimVR.exe+17EF7D0	)
+	[RSP+9C0 ] 0x1FBEF3672C8      (void*)
+	[RSP+9C8 ] 0x600000006        (size_t) [25769803782]
+	[RSP+9D0 ] 0x8000000006       (size_t) [549755813894]
+	[RSP+9D8 ] 0x760207EEC8       (BSResourceNiBinaryStream*)
+	[RSP+9E0 ] 0x0                (size_t) [0]
+	[RSP+9E8 ] 0x0                (size_t) [0]
+	[RSP+9F0 ] 0x7FF64F93F820     (void* -> SkyrimVR.exe+17EF820	sar byte ptr [rdi], 0x01)
+	[RSP+9F8 ] 0x25               (size_t) [37]
+	[RSP+A00 ] 0x1FBF48820C0      (void*)
+	[RSP+A08 ] 0x2700000000       (size_t) [167503724544]
+	[RSP+A10 ] 0x0                (size_t) [0]
+	[RSP+A18 ] 0x0                (size_t) [0]
+	[RSP+A20 ] 0x4                (size_t) [4]
+	[RSP+A28 ] 0x0                (size_t) [0]
+	[RSP+A30 ] 0x0                (size_t) [0]
+	[RSP+A38 ] 0x0                (size_t) [0]
+	[RSP+A40 ] 0xFFFFFFFF00000002 (size_t) [uint: 18446744069414584322 int: -4294967294]
+	[RSP+A48 ] 0xFFFFFFFF         (size_t) [4294967295]
+	[RSP+A50 ] 0x0                (size_t) [0]
+	[RSP+A58 ] 0x0                (size_t) [0]
+	[RSP+A60 ] 0x0                (size_t) [0]
+	[RSP+A68 ] 0x0                (size_t) [0]
+	[RSP+A70 ] 0x0                (size_t) [0]
+	[RSP+A78 ] 0x0                (size_t) [0]
+	[RSP+A80 ] 0x0                (size_t) [0]
+	[RSP+A88 ] 0x0                (size_t) [0]
+	[RSP+A90 ] 0x0                (size_t) [0]
+	[RSP+A98 ] 0x0                (size_t) [0]
+	[RSP+AA0 ] 0x0                (size_t) [0]
+	[RSP+AA8 ] 0x0                (size_t) [0]
+	[RSP+AB0 ] 0x0                (size_t) [0]
+	[RSP+AB8 ] 0x0                (size_t) [0]
+	[RSP+AC0 ] 0x0                (size_t) [0]
+	[RSP+AC8 ] 0x0                (size_t) [0]
+	[RSP+AD0 ] 0x0                (size_t) [0]
+	[RSP+AD8 ] 0x0                (size_t) [0]
+	[RSP+AE0 ] 0x0                (size_t) [0]
+	[RSP+AE8 ] 0x0                (size_t) [0]
+	[RSP+AF0 ] 0x0                (size_t) [0]
+	[RSP+AF8 ] 0x0                (size_t) [0]
+	[RSP+B00 ] 0x0                (size_t) [0]
+	[RSP+B08 ] 0x0                (size_t) [0]
+	[RSP+B10 ] 0x0                (size_t) [0]
+	[RSP+B18 ] 0x0                (size_t) [0]
+	[RSP+B20 ] 0x0                (size_t) [0]
+	[RSP+B28 ] 0x0                (size_t) [0]
+	[RSP+B30 ] 0x0                (size_t) [0]
+	[RSP+B38 ] 0x0                (size_t) [0]
+	[RSP+B40 ] 0x0                (size_t) [0]
+	[RSP+B48 ] 0x0                (size_t) [0]
+	[RSP+B50 ] 0x0                (size_t) [0]
+	[RSP+B58 ] 0x90               (size_t) [144]
+	[RSP+B60 ] 0x0                (size_t) [0]
+	[RSP+B68 ] 0x7FFA742D492F     (void* -> KERNELBASE.dll+004492F	add rsp, 0x70)
+	[RSP+B70 ] 0x1FB79FEA600      (char*) "G:/SteamLibrary/steamapps/common/SkyrimVR/Data/SKSE/Plugins/SkyPatcher.dll"
+	[RSP+B78 ] 0x1F99E6C0000      (void*)
+	[RSP+B80 ] 0x87               (size_t) [135]
+	[RSP+B88 ] 0x7FFA742D492F     (void* -> KERNELBASE.dll+004492F	add rsp, 0x70)
+	[RSP+B90 ] 0xE                (size_t) [14]
+	[RSP+B98 ] 0x0                (size_t) [0]
+	[RSP+BA0 ] 0x26D              (size_t) [621]
+	[RSP+BA8 ] 0x7FF64E29339A     (void* -> SkyrimVR.exe+014339A	mov ebp, eax)
+	[RSP+BB0 ] 0xE                (size_t) [14]
+	[RSP+BB8 ] 0x1000             (size_t) [4096]
+	[RSP+BC0 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+BC8 ] 0x0                (size_t) [0]
+	[RSP+BD0 ] 0x7FF65129FBD8     (void* -> SkyrimVR.exe+314FBD8	add [rax], al)
+	[RSP+BD8 ] 0x7FF64EDBF5B9     (void* -> SkyrimVR.exe+0C6F5B9	cmp [rbx], eax)
+	[RSP+BE0 ] 0x7FF65129FBD8     (void* -> SkyrimVR.exe+314FBD8	add [rax], al)
+	[RSP+BE8 ] 0x583D             (size_t) [22589]
+	[RSP+BF0 ] 0x21               (size_t) [33]
+	[RSP+BF8 ] 0x760207F450       (void*)
+	[RSP+C00 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+C08 ] 0x89               (size_t) [137]
+	[RSP+C10 ] 0x1FBF03A4130      (void*)
+	[RSP+C18 ] 0x1FBF03A4140      (void*)
+	[RSP+C20 ] 0x0                (size_t) [0]
+	[RSP+C28 ] 0x760207F5A0       (void*)
+	[RSP+C30 ] 0x1                (size_t) [1]
+	[RSP+C38 ] 0x7FF64EDBDD1A     (void* -> SkyrimVR.exe+0C6DD1A	mov rax, rbx)
+	[RSP+C40 ] 0x7FF65129FBD8     (void* -> SkyrimVR.exe+314FBD8	add [rax], al)
+	[RSP+C48 ] 0x760207F5A0       (void*)
+	[RSP+C50 ] 0x0                (size_t) [0]
+	[RSP+C58 ] 0x0                (size_t) [0]
+	[RSP+C60 ] 0x0                (size_t) [0]
+	[RSP+C68 ] 0x0                (size_t) [0]
+	[RSP+C70 ] 0x0                (size_t) [0]
+	[RSP+C78 ] 0x0                (size_t) [0]
+	[RSP+C80 ] 0x0                (size_t) [0]
+	[RSP+C88 ] 0x0                (size_t) [0]
+	[RSP+C90 ] 0x0                (size_t) [0]
+	[RSP+C98 ] 0x0                (size_t) [0]
+	[RSP+CA0 ] 0x0                (size_t) [0]
+	[RSP+CA8 ] 0x0                (size_t) [0]
+	[RSP+CB0 ] 0x0                (size_t) [0]
+	[RSP+CB8 ] 0x0                (size_t) [0]
+	[RSP+CC0 ] 0x0                (size_t) [0]
+	[RSP+CC8 ] 0x0                (size_t) [0]
+	[RSP+CD0 ] 0x0                (size_t) [0]
+	[RSP+CD8 ] 0x0                (size_t) [0]
+	[RSP+CE0 ] 0x0                (size_t) [0]
+	[RSP+CE8 ] 0x0                (size_t) [0]
+	[RSP+CF0 ] 0x0                (size_t) [0]
+	[RSP+CF8 ] 0x0                (size_t) [0]
+	[RSP+D00 ] 0x0                (size_t) [0]
+	[RSP+D08 ] 0x0                (size_t) [0]
+	[RSP+D10 ] 0x0                (size_t) [0]
+	[RSP+D18 ] 0x0                (size_t) [0]
+	[RSP+D20 ] 0x0                (size_t) [0]
+	[RSP+D28 ] 0x0                (size_t) [0]
+	[RSP+D30 ] 0x0                (size_t) [0]
+	[RSP+D38 ] 0x0                (size_t) [0]
+	[RSP+D40 ] 0x0                (size_t) [0]
+	[RSP+D48 ] 0x0                (size_t) [0]
+	[RSP+D50 ] 0x0                (size_t) [0]
+	[RSP+D58 ] 0x7FF900000000     (size_t) [140707423584256]
+	[RSP+D60 ] 0x0                (size_t) [0]
+	[RSP+D68 ] 0x0                (size_t) [0]
+	[RSP+D70 ] 0x1FBF03A4130      (void*)
+	[RSP+D78 ] 0x1FBF03A4140      (void*)
+	[RSP+D80 ] 0x1F9FD20C098      (char*) "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+D88 ] 0x0                (size_t) [0]
+	[RSP+D90 ] 0xA0000001         (size_t) [2684354561]
+	[RSP+D98 ] 0x1                (size_t) [1]
+	[RSP+DA0 ] 0x0                (size_t) [0]
+	[RSP+DA8 ] 0x7FF64E319E78     (void* -> SkyrimVR.exe+01C9E78	lea eax, [rbp-0x10000000])
+	[RSP+DB0 ] 0x0                (size_t) [0]
+	[RSP+DB8 ] 0x1F9FD20C098      (char*) "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+DC0 ] 0x3                (size_t) [3]
+	[RSP+DC8 ] 0x760207F958       (void*)
+	[RSP+DD0 ] 0x1FBF03A4140      (void*)
+	[RSP+DD8 ] 0x1FBF03A4130      (void*)
+	[RSP+DE0 ] 0x1F9FD20C098      (char*) "data\MESHES\ImmersiveUI\laser.nif"
+	[RSP+DE8 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+DF0 ] 0x0                (size_t) [0]
+	[RSP+DF8 ] 0x760207F958       (void*)
+	[RSP+E00 ] 0x7FF6512BDD30     (BSResource::EntryDB<BSModelDB::DBTraits>*)
+	[RSP+E08 ] 0x1FB663667A8      (void*)
+	[RSP+E10 ] 0x1                (size_t) [1]
+	[RSP+E18 ] 0x1FBF03A4130      (void*)
+	[RSP+E20 ] 0x760207F870       (void*)
+	[RSP+E28 ] 0x7FF64EEC7595     (void* -> SkyrimVR.exe+0D77595	mov edi, eax)
+	[RSP+E30 ] 0x7FF6512BDE00     (void* -> SkyrimVR.exe+316DE00	add [rax], al)
+	[RSP+E38 ] 0x2                (size_t) [2]
+	[RSP+E40 ] 0x1F9FD201120      (BSResource::`anonymous namespace'::LooseFileStream*)
+	[RSP+E48 ] 0x760207F870       (void*)
+	[RSP+E50 ] 0x760207F958       (void*)
+	[RSP+E58 ] 0x0                (size_t) [0]
+	[RSP+E60 ] 0x66696E2F6E53D1   (size_t) [28826369587565521]
+	[RSP+E68 ] 0xE0A932F1         (size_t) [3769185009]
+	[RSP+E70 ] 0x1F9FD1FCBE0      (void*)
+	[RSP+E78 ] 0x1F900000001      (size_t) [2168958484481]
+	[RSP+E80 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+E88 ] 0x0                (size_t) [0]
+	[RSP+E90 ] 0x7FF6512B9B30     (void* -> SkyrimVR.exe+3169B30	add [rax], al)
+	[RSP+E98 ] 0x1F9AB62B000      (void*)
+	[RSP+EA0 ] 0x0                (size_t) [0]
+	[RSP+EA8 ] 0x1F9FCC7DC00      (void*)
+	[RSP+EB0 ] 0x0                (size_t) [0]
+	[RSP+EB8 ] 0x1F9F9DFB000      (void*)
+	[RSP+EC0 ] 0x0                (size_t) [0]
+	[RSP+EC8 ] 0x1F9FD22E400      (void*)
+	[RSP+ED0 ] 0x0                (size_t) [0]
+	[RSP+ED8 ] 0x0                (size_t) [0]
+	[RSP+EE0 ] 0x0                (size_t) [0]
+	[RSP+EE8 ] 0x0                (size_t) [0]
+	[RSP+EF0 ] 0x0                (size_t) [0]
+	[RSP+EF8 ] 0x0                (size_t) [0]
+	[RSP+F00 ] 0x0                (size_t) [0]
+	[RSP+F08 ] 0x0                (size_t) [0]
+	[RSP+F10 ] 0x0                (size_t) [0]
+	[RSP+F18 ] 0x0                (size_t) [0]
+	[RSP+F20 ] 0x0                (size_t) [0]
+	[RSP+F28 ] 0x0                (size_t) [0]
+	[RSP+F30 ] 0x0                (size_t) [0]
+	[RSP+F38 ] 0x0                (size_t) [0]
+	[RSP+F40 ] 0x0                (size_t) [0]
+	[RSP+F48 ] 0x7FF6512B9B30     (void* -> SkyrimVR.exe+3169B30	add [rax], al)
+	[RSP+F50 ] 0x695C73656873656D (size_t) [7592069951221097837]
+	[RSP+F58 ] 0x6576697372656D6D (size_t) [7311146989643984237]
+	[RSP+F60 ] 0x726573616C5C4955 (size_t) [8243121555238570325]
+	[RSP+F68 ] 0x10066696E2E      (size_t) [1101229813294]
+	[RSP+F70 ] 0x7FFA74B288B0     (void* -> ucrtbase.dll+01388B0	add [rax], al)
+	[RSP+F78 ] 0x1F9AC85F0F0      (void*)
+	[RSP+F80 ] 0x0                (size_t) [0]
+	[RSP+F88 ] 0x50               (size_t) [80]
+	[RSP+F90 ] 0x2                (size_t) [2]
+	[RSP+F98 ] 0x760207FBA0       (void*)
+	[RSP+FA0 ] 0x7FF99CD30E01     (char*) "x@details@spdlog@@@sinks@spdlog@@"
+	[RSP+FA8 ] 0x760207FB50       (void*)
+	[RSP+FB0 ] 0x2                (size_t) [2]
+	[RSP+FB8 ] 0x760207F8D0       (void*)
+	[RSP+FC0 ] 0x0                (size_t) [0]
+	[RSP+FC8 ] 0x7FF99CC9FC20     (void* -> ImmersiveUI.dll+000FC20	jmp 0x00007FF99CCA81D0)
+	[RSP+FD0 ] 0x1F9AC29F8F0      (void*)
+	[RSP+FD8 ] 0x7FF99CD30EF0     (void* -> ImmersiveUI.dll+00A0EF0	add [rax], eax)
+	[RSP+FE0 ] 0x7FFFFFFFFFFFFFFF (size_t) [9223372036854775807]
+	[RSP+FE8 ] 0x40               (size_t) [64]
+	[RSP+FF0 ] 0x1F9AF58BA50      (char*) "immersiveUI\laser.nif"
+	[RSP+FF8 ] 0x7FF99CCAC543     (void* -> ImmersiveUI.dll+001C543	mov rbx, [rsp+0xA8])
+	[RSP+1000] 0x1FB7A2EA2D0      (void*)
+	[RSP+1008] 0x40               (size_t) [64]
+	[RSP+1010] 0x1FB7A2EA2F0      (void*)
+	[RSP+1018] 0x760207FA80       (void*)
+	[RSP+1020] 0x12138            (size_t) [74040]
+	[RSP+1028] 0x1F9AF58BBC0      (char*) "us\"
+	[RSP+1030] 0x1F9AF58BBC0      (char*) "us\"
+	[RSP+1038] 0x7FFA74A0E0FB     (void* -> ucrtbase.dll+001E0FB	test eax, eax)
+	[RSP+1040] 0x1F99E6C0000      (void*)
+	[RSP+1048] 0x7600000000       (size_t) [506806140928]
+	[RSP+1050] 0x1F9AF58BBA0      (char*) "OculusBase=C:\Program Files\Oculus\"
+	[RSP+1058] 0x760207F710       (char*) "meshes\immersiveUI\laser.nif"
+	[RSP+1060] 0x0                (size_t) [0]
+	[RSP+1068] 0x1F9AF58C0B0      (char*) "meshes\immersiveUI\laser.nif"
+	[RSP+1070] 0x1F9AF58BA50      (char*) "immersiveUI\laser.nif"
+	[RSP+1078] 0x1C               (size_t) [28]
+	[RSP+1080] 0x1FB7A2EA310      (char*) "\"
+	[RSP+1088] 0x7FF64EEC760A     (void* -> SkyrimVR.exe+0D7760A	mov edi, eax)
+	[RSP+1090] 0x760207F910       (void*)
+	[RSP+1098] 0x760207F990       (std::_Fmt_iterator_buffer<std::back_insert_iterator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,char,std::_Fmt_buffer_traits>*)
+	[RSP+10A0] 0x7FF99CD31018     (void* -> ImmersiveUI.dll+00A1018	push rax)
+	[RSP+10A8] 0x7FF600000002     (size_t) [140694538682370]
+	[RSP+10B0] 0x0                (size_t) [0]
+	[RSP+10B8] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+10C0] 0x1FB7A2EA310      (char*) "\"
+	[RSP+10C8] 0x7FF99CCC87EA     (void* -> ImmersiveUI.dll+00387EA	test eax, eax)
+	[RSP+10D0] 0x1FB7A2EA2D0      (void*)
+	[RSP+10D8] 0x760207F990       (std::_Fmt_iterator_buffer<std::back_insert_iterator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,char,std::_Fmt_buffer_traits>*)
+	[RSP+10E0] 0x7FF99CD31018     (void* -> ImmersiveUI.dll+00A1018	push rax)
+	[RSP+10E8] 0x12138            (size_t) [74040]
+	[RSP+10F0] 0x0                (size_t) [0]
+	[RSP+10F8] 0x760207FBA0       (void*)
+	[RSP+1100] 0x0                (size_t) [0]
+	[RSP+1108] 0x0                (size_t) [0]
+	[RSP+1110] 0x1FB7A2EA2D0      (void*)
+	[RSP+1118] 0x1FB7A2EA310      (char*) "\"
+	[RSP+1120] 0x1FB7A2EA310      (char*) "\"
+	[RSP+1128] 0x3EF35702CA166E   (size_t) [17719003590563438]
+	[RSP+1130] 0x69D4             (size_t) [27092]
+	[RSP+1138] 0x21               (size_t) [33]
+	[RSP+1140] 0x25               (size_t) [37]
+	[RSP+1148] 0x7FF99CCF32E8     (char*) "src\vrui\VRMenuManager.cpp"
+	[RSP+1150] 0x0                (size_t) [0]
+	[RSP+1158] 0x7FF99CCF3308     (char*) "void __cdecl vrui::VRMenuManager::initialize(void)"
+	[RSP+1160] 0x760207F8D0       (void*)
+	[RSP+1168] 0x49               (size_t) [73]
+	[RSP+1170] 0x1F9AF58BBA0      (char*) "OculusBase=C:\Program Files\Oculus\"
+	[RSP+1178] 0x1F9AF58BBA0      (char*) "OculusBase=C:\Program Files\Oculus\"
+	[RSP+1180] 0x760207F8D0       (void*)
+	[RSP+1188] 0x4F               (size_t) [79]
+	[RSP+1190] 0x760207FB68       (void*)
+	[RSP+1198] 0x300000000        (size_t) [12884901888]
+	[RSP+11A0] 0x7FF901010001     (size_t) [140707440427009]
+	[RSP+11A8] 0x0                (size_t) [0]
+	[RSP+11B0] 0x760207F990       (std::_Fmt_iterator_buffer<std::back_insert_iterator<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >,char,std::_Fmt_buffer_traits>*)
+	[RSP+11B8] 0x0                (size_t) [0]
+	[RSP+11C0] 0x0                (size_t) [0]
+	[RSP+11C8] 0x0                (size_t) [0]
+	[RSP+11D0] 0x7FF99CCF1CE0     (void* -> ImmersiveUI.dll+0061CE0	ret far 0xF99C)
+	[RSP+11D8] 0x760207F9B8       (void*)
+	[RSP+11E0] 0x0                (size_t) [0]
+	[RSP+11E8] 0x100              (size_t) [256]
+	[RSP+11F0] 0x760207F930       (void*)
+	[RSP+11F8] 0x76697372656D6D49 (size_t) [8532477904195251529]
+	[RSP+1200] 0x495256203A495565 (size_t) [5283380009275839845]
+	[RSP+1208] 0x746365746564204B (size_t) [8386658481685667915]
+	[RSP+1210] 0x77206557202E6465 (size_t) [8583972314644636773]
+	[RSP+1218] 0x61747461206C6C69 (size_t) [7022365679482072169]
+	[RSP+1220] 0x6F74204955206863 (size_t) [8031079534841325667]
+	[RSP+1228] 0x6472332065687420 (size_t) [7237903765371122720]
+	[RSP+1230] 0x206E6F7372657020 (size_t) [2336927798283038752]
+	[RSP+1238] 0x6E6F74656C656B73 (size_t) [7957707045546060659]
+	[RSP+1240] 0x1F9AD921A2E      (void*)
+	[RSP+1248] 0xFDE9             (size_t) [65001]
+	[RSP+1250] 0x0                (size_t) [0]
+	[RSP+1258] 0x0                (size_t) [0]
+	[RSP+1260] 0x0                (size_t) [0]
+	[RSP+1268] 0x0                (size_t) [0]
+	[RSP+1270] 0x1F9ADA474D0      (std::_Facet_base*)
+	[RSP+1278] 0x0                (size_t) [0]
+	[RSP+1280] 0x0                (size_t) [0]
+	[RSP+1288] 0x0                (size_t) [0]
+	[RSP+1290] 0x7FF99CCF3308     (char*) "void __cdecl vrui::VRMenuManager::initialize(void)"
+	[RSP+1298] 0x7FF99CD30EF0     (void* -> ImmersiveUI.dll+00A0EF0	add [rax], eax)
+	[RSP+12A0] 0x7FF99CD30EF1     (void* -> ImmersiveUI.dll+00A0EF1	add [rax], al)
+	[RSP+12A8] 0x7FF99CD30EF0     (void* -> ImmersiveUI.dll+00A0EF0	add [rax], eax)
+	[RSP+12B0] 0x0                (size_t) [0]
+	[RSP+12B8] 0x7FF99CCF32E8     (char*) "src\vrui\VRMenuManager.cpp"
+	[RSP+12C0] 0x1F9AF58C000      (char*) "Program Files"
+	[RSP+12C8] 0x0                (size_t) [0]
+	[RSP+12D0] 0x0                (size_t) [0]
+	[RSP+12D8] 0xF                (size_t) [15]
+	[RSP+12E0] 0x1F9AF58BB00      (void*)
+	[RSP+12E8] 0x0                (size_t) [0]
+	[RSP+12F0] 0x0                (size_t) [0]
+	[RSP+12F8] 0xF                (size_t) [15]
+	[RSP+1300] 0xDA2AA6C0131B     (size_t) [239876721087259]
+	[RSP+1308] 0x7FF900000010     (size_t) [140707423584272]
+	[RSP+1310] 0x7FF99CCF3308     (char*) "void __cdecl vrui::VRMenuManager::initialize(void)"
+	[RSP+1318] 0x7FF99CD30EF0     (void* -> ImmersiveUI.dll+00A0EF0	add [rax], eax)
+	[RSP+1320] 0x7FF99CD30EF1     (void* -> ImmersiveUI.dll+00A0EF1	add [rax], al)
+	[RSP+1328] 0x7FF99CD30EF0     (void* -> ImmersiveUI.dll+00A0EF0	add [rax], eax)
+	[RSP+1330] 0x0                (size_t) [0]
+	[RSP+1338] 0x7FF99CCF32E8     (char*) "src\vrui\VRMenuManager.cpp"
+	[RSP+1340] 0x760207FC99       (void*)
+	[RSP+1348] 0x7FF99CCB5235     (void* -> ImmersiveUI.dll+0025235	mov r12, rax)
+	[RSP+1350] 0x760207FB68       (void*)
+	[RSP+1358] 0x7FF99F45B334     (char*) "SKSE"
+	[RSP+1360] 0x7FF99CD30F80     (void* -> ImmersiveUI.dll+00A0F80	)
+	[RSP+1368] 0x760207FC99       (void*)
+	[RSP+1370] 0x760207FC99       (void*)
+	[RSP+1378] 0x7FFA74A0489E     (void* -> ucrtbase.dll+001489E	mov eax, edi)
+	[RSP+1380] 0x760207FB01       (void*)
+	[RSP+1388] 0x760207FBC0       (void*)
+	[RSP+1390] 0x7FF99CCF3390     (char*) "ImmersiveUI: VRIK detected. We will attach UI to the 3rd person skeleton."
+	[RSP+1398] 0x49               (size_t) [73]
+	[RSP+13A0] 0x7FF99CD30F80     (void* -> ImmersiveUI.dll+00A0F80	)
+	[RSP+13A8] 0x7FFA74A04844     (void* -> ucrtbase.dll+0014844	add rsp, 0x38)
+	[RSP+13B0] 0x7FF99CD31018     (void* -> ImmersiveUI.dll+00A1018	push rax)
+	[RSP+13B8] 0x7FF99CD30EF1     (void* -> ImmersiveUI.dll+00A0EF1	add [rax], al)
+	[RSP+13C0] 0x7FF99CCF32E8     (char*) "src\vrui\VRMenuManager.cpp"
+	[RSP+13C8] 0x34               (size_t) [52]
+	[RSP+13D0] 0x7FF99CCF3308     (char*) "void __cdecl vrui::VRMenuManager::initialize(void)"
+	[RSP+13D8] 0x760207FBB8       (void*)
+	[RSP+13E0] 0x7FF99CCF32E8     (char*) "src\vrui\VRMenuManager.cpp"
+	[RSP+13E8] 0x34               (size_t) [52]
+	[RSP+13F0] 0x7FF99CCF3308     (char*) "void __cdecl vrui::VRMenuManager::initialize(void)"
+	[RSP+13F8] 0x7                (size_t) [7]
+	[RSP+1400] 0x2                (size_t) [2]
+	[RSP+1408] 0x7FF900000002     (size_t) [140707423584258]
+	[RSP+1410] 0x7FF99CCF2518     (char*) "src\main.cpp"
+	[RSP+1418] 0x7FF99CCE6D9E     (void* -> ImmersiveUI.dll+0056D9E	lea rcx, [0x00007FF99CD32B88])
+	[RSP+1420] 0x1FB7A51DE30      (char*) "Data/SKSE/Plugins/ImmersiveUI.ini"
+	[RSP+1428] 0x0                (size_t) [0]
+	[RSP+1430] 0x21               (size_t) [33]
+	[RSP+1438] 0x2F               (size_t) [47]
+	[RSP+1440] 0xDA2AA6C0109B     (size_t) [239876721086619]
+	[RSP+1448] 0x7FF99CCB4D80     (void* -> ImmersiveUI.dll+0024D80	jmp 0x00007FF99CCB4D47)
+	[RSP+1450] 0x0                (size_t) [0]
+	[RSP+1458] 0x7FF99F45B334     (char*) "SKSE"
+	[RSP+1460] 0x0                (size_t) [0]
+	[RSP+1468] 0x0                (size_t) [0]
+	[RSP+1470] 0x7FF99CCF2518     (char*) "src\main.cpp"
+	[RSP+1478] 0x7FF99CCAFD69     (void* -> ImmersiveUI.dll+001FD69	call 0x00007FF99CCD0AA0)
+	[RSP+1480] 0x15               (size_t) [21]
+	[RSP+1488] 0x1F9AD98AA70      (void*)
+	[RSP+1490] 0x7FF99CCF2C20     (char*) "void __cdecl SKSEMessageHandler(struct SKSE::MessagingInterface::Message *)"
+	[RSP+1498] 0x1F99E73DCC0      (void*)
+	[RSP+14A0] 0x7FF99CCF2518     (char*) "src\main.cpp"
+	[RSP+14A8] 0x15E              (size_t) [350]
+	[RSP+14B0] 0x7FF99CCF2C20     (char*) "void __cdecl SKSEMessageHandler(struct SKSE::MessagingInterface::Message *)"
+	[RSP+14B8] 0x7FF99F3EE4EA     (void* -> sksevr_1_4_15.dll+009E4EA	)
+	[RSP+14C0] 0x7FF99CCF2C70     (char*) "ImmersiveUI: ===== kDataLoaded ====="
+	[RSP+14C8] 0x24               (size_t) [36]
+	[RSP+14D0] 0x7FF99CCF2518     (char*) "src\main.cpp"
+	[RSP+14D8] 0x15E              (size_t) [350]
+	[RSP+14E0] 0x7FF99CCF2C20     (char*) "void __cdecl SKSEMessageHandler(struct SKSE::MessagingInterface::Message *)"
+	[RSP+14E8] 0x7FF99F3742B2     (void* -> sksevr_1_4_15.dll+00242B2	add rsp, 0x38)
+	[RSP+14F0] 0x7FF64F849908     (void* -> SkyrimVR.exe+16F9908	)
+	[RSP+14F8] 0x7FF99CD59479     (void* -> ImmersiveCrossbowReloadVR.dll+0019479	xchg [0x00007FF99CDA7CC6], dil |  F:\Study\skse\ImmersiveCrossbowReloadVR\sksevr\ImmersiveCrossbowReloadVR\main.cpp:151 OnSKSEMessage)
+	[RSP+1500] 0x7FF64F849908     (void* -> SkyrimVR.exe+16F9908	)
+	[RSP+1508] 0x7FF99CD99A98     (char*) "Animation hook enabled in StartMod."
+	[RSP+1510] 0x0                (size_t) [0]
+	[RSP+1518] 0x760207FD08       (void*)
+	[RSP+1520] 0xFFFFFFFF         (size_t) [4294967295]
+	[RSP+1528] 0xFFFFFFFF         (size_t) [4294967295]
+	[RSP+1530] 0x15               (size_t) [21]
+	[RSP+1538] 0x7FF99F3E6371     (void* -> sksevr_1_4_15.dll+0096371	mov r11, [0x00007FF99F4B2140])
+	[RSP+1540] 0x7FF99F4609A8     (char*) "sending message type %u to plugin %u"
+	[RSP+1548] 0x1F9AD98AA70      (void*)
+	[RSP+1550] 0x8                (size_t) [8]
+	[RSP+1558] 0xFFFFFFFF         (size_t) [4294967295]
+	[RSP+1560] 0x7FF99F45B334     (char*) "SKSE"
+	[RSP+1568] 0x8                (size_t) [8]
+	[RSP+1570] 0x0                (size_t) [0]
+	[RSP+1578] 0x7FF64E2D1BAE     (void* -> SkyrimVR.exe+0181BAE	cmp rbx, [rax])
+	[RSP+1580] 0x0                (size_t) [0]
+	[RSP+1588] 0x768              (size_t) [1896]
+	[RSP+1590] 0x1FAC8A6905A      (char*) "Controle desconectado."
+	[RSP+1598] 0x1FB66366040      (void*)
+	[RSP+15A0] 0x760207FE19       (void*)
+	[RSP+15A8] 0x7FF99F35BF88     (void* -> sksevr_1_4_15.dll+000BF88	mov eax, ebx)
+	[RSP+15B0] 0x0                (size_t) [0]
+	[RSP+15B8] 0x1F9AB619D01      (void*)
+	[RSP+15C0] 0x207FD70          (size_t) [34078064]
+	[RSP+15C8] 0x1FAC8A6905A      (char*) "Controle desconectado."
+	[RSP+15D0] 0x0                (size_t) [0]
+	[RSP+15D8] 0x0                (size_t) [0]
+	[RSP+15E0] 0x2                (size_t) [2]
+	[RSP+15E8] 0x7FF64E707EED     (void* -> SkyrimVR.exe+05B7EED	cmp dword ptr [0x00007FF6500D1D88], 0x02)
+	[RSP+15F0] 0x2                (size_t) [2]
+	[RSP+15F8] 0x2                (size_t) [2]
+	[RSP+1600] 0x760207FE19       (void*)
+	[RSP+1608] 0x1FB66366040      (void*)
+	[RSP+1610] 0x1FB6E000700      (Sky*)
+	[RSP+1618] 0x1FB6DED4F40      (LoadedAreaBound*)
+	[RSP+1620] 0x7FF65113C2A0     (BGSStoryTeller*)
+	[RSP+1628] 0x0                (size_t) [0]
+	[RSP+1630] 0x7FF64FFFC090     (SettingT<INISettingCollection>*)
+	[RSP+1638] 0x7FF64FFFC0A8     (SettingT<INISettingCollection>*)
+	[RSP+1640] 0x7FF64FFFC0C0     (SettingT<INISettingCollection>*)
+	[RSP+1648] 0x7FF64FFFC0D8     (SettingT<INISettingCollection>*)
+	[RSP+1650] 0x7FF64FFFC0F0     (SettingT<INISettingCollection>*)
+	[RSP+1658] 0x7FF64FFFC108     (SettingT<INISettingCollection>*)
+	[RSP+1660] 0x7FF64FFFC120     (SettingT<INISettingCollection>*)
+	[RSP+1668] 0x7FF64FFFC138     (SettingT<INISettingCollection>*)
+	[RSP+1670] 0x7FF64FFFC150     (SettingT<INISettingCollection>*)
+	[RSP+1678] 0x7FF64FFFC168     (SettingT<INISettingCollection>*)
+	[RSP+1680] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+1688] 0x7FF65113C750     (void* -> SkyrimVR.exe+2FEC750	add [rax], al)
+	[RSP+1690] 0x0                (size_t) [0]
+	[RSP+1698] 0x0                (size_t) [0]
+	[RSP+16A0] 0x0                (size_t) [0]
+	[RSP+16A8] 0x0                (size_t) [0]
+	[RSP+16B0] 0x0                (size_t) [0]
+	[RSP+16B8] 0x7FF64E71060C     (void* -> SkyrimVR.exe+05C060C	mov rcx, rbx)
+	[RSP+16C0] 0x767CF0F730       (InitTESThread*)
+	[RSP+16C8] 0x0                (size_t) [0]
+	[RSP+16D0] 0x2                (size_t) [2]
+	[RSP+16D8] 0x7FF65113C2A0     (BGSStoryTeller*)
+	[RSP+16E0] 0x767CF0F730       (InitTESThread*)
+	[RSP+16E8] 0x7FF64ED984ED     (void* -> SkyrimVR.exe+0C484ED	mov rcx, [0x00007FF651213AA8])
+	[RSP+16F0] 0x0                (size_t) [0]
+	[RSP+16F8] 0x767CF0F730       (InitTESThread*)
+	[RSP+1700] 0x1F9AB6249C8      (void*)
+	[RSP+1708] 0x1F9AB6249C8      (void*)
+	[RSP+1710] 0x767CF0F730       (InitTESThread*)
+	[RSP+1718] 0x0                (size_t) [0]
+	[RSP+1720] 0x0                (size_t) [0]
+	[RSP+1728] 0x7FFA76E1E8D7     (void* -> KERNEL32.DLL+002E8D7	mov ecx, eax)
+	[RSP+1730] 0x0                (size_t) [0]
+	[RSP+1738] 0x0                (size_t) [0]
+	[RSP+1740] 0x0                (size_t) [0]
+	[RSP+1748] 0x0                (size_t) [0]
+	[RSP+1750] 0x0                (size_t) [0]
+	[RSP+1758] 0x7FFA779AC40C     (void* -> ntdll.dll+008C40C	jmp 0x00007FFA779AC436)
+	[RSP+1760] 0x0                (size_t) [0]
+	[RSP+1768] 0x0                (size_t) [0]
+	[RSP+1770] 0x4F0FFFFFB30      (size_t) [5433133628208]
+	[RSP+1778] 0x4D0FFFFFB30      (size_t) [5295694674736]
+	[RSP+1780] 0x21               (size_t) [33]
+	[RSP+1788] 0x7FFA743A5570     (void* -> KERNELBASE.dll+0115570	mov [rsp+0x10], rbx)
+	[RSP+1790] 0x760207D900       (void*)
+	[RSP+1798] 0x760207D900       (void*)
+	[RSP+17A0] 0x0                (size_t) [0]
+	[RSP+17A8] 0x0                (size_t) [0]
+	[RSP+17B0] 0x0                (size_t) [0]
+	[RSP+17B8] 0x0                (size_t) [0]
+	[RSP+17C0] 0x0                (size_t) [0]
+	[RSP+17C8] 0x0                (size_t) [0]
+	[RSP+17D0] 0x0                (size_t) [0]
+	[RSP+17D8] 0x0                (size_t) [0]
+	[RSP+17E0] 0x0                (size_t) [0]
+	[RSP+17E8] 0x0                (size_t) [0]
+	[RSP+17F0] 0x0                (size_t) [0]
+	[RSP+17F8] 0x0                (size_t) [0]
+	[RSP+1800] 0x0                (size_t) [0]
+	[RSP+1808] 0x0                (size_t) [0]
+	[RSP+1810] 0x0                (size_t) [0]
+	[RSP+1818] 0x0                (size_t) [0]
+	[RSP+1820] 0x0                (size_t) [0]
+	[RSP+1828] 0x0                (size_t) [0]
+	[RSP+1830] 0x0                (size_t) [0]
+	[RSP+1838] 0x0                (size_t) [0]
+
+MODULES:
+	XINPUT1_3.dll                          0x000000400000
+	x3daudio1_7.dll                        0x000075470000
+	steam_api64.dll                        0x000075480000
+	binkw64.dll                            0x000180000000
+	BehaviorDataInjector.dll               0x01F9AC4D0000
+	papyrusutil_eslpatch.dll               0x01F9ADE20000
+	SkyrimVR.exe                           0x7FF64E150000
+	XAudio2_7.dll                          0x7FF9942C0000
+	nvcuda64.dll                           0x7FF994350000
+	_nvngx.dll                             0x7FF9965E0000
+	ffx_fsr2_api_dx12_x64.dll              0x7FF996880000
+	ffx_fsr2_api_dx11_x64.dll              0x7FF996BF0000
+	ThrowingStuffVR.dll                    0x7FF997210000
+	PDPerfPlugin.dll                       0x7FF997F10000
+	ffx_backend_dx11_x64.dll               0x7FF998190000
+	nvngx_dlss.dll                         0x7FF9989A0000
+	SkyrimUpscaler.dll                     0x7FF99A190000
+	SkyPatcher.dll                         0x7FF99A300000
+	SCAR.dll                               0x7FF99A570000
+	RoguesGallery.dll                      0x7FF99A750000
+	RicochetFramework.dll                  0x7FF99A8C0000
+	PoachedBugsVR.dll                      0x7FF99AB50000
+	po3_Tweaks.dll                         0x7FF99AC30000
+	po3_SpellPerkItemDistributor.dll       0x7FF99AD40000
+	po3_SaveUnbaker.dll                    0x7FF99AF10000
+	po3_PapyrusExtender.dll                0x7FF99AFC0000
+	po3_LockVariations.dll                 0x7FF99B2D0000
+	po3_MoonMod.dll                        0x7FF99B4F0000
+	po3_KeywordItemDistributor.dll         0x7FF99B5B0000
+	po3_DualCastingFix.dll                 0x7FF99B750000
+	po3_ConsolePlusPlus.dll                0x7FF99B7F0000
+	po3_BaseObjectSwapper.dll              0x7FF99B8B0000
+	PayloadInterpreter.dll                 0x7FF99BA00000
+	PapyrusUtil.dll                        0x7FF99BB50000
+	PapyrusTweaks.dll                      0x7FF99BCC0000
+	PairedAnimationImprovements.dll        0x7FF99BDC0000
+	OpenAnimationReplacer.dll              0x7FF99BE30000
+	ObjectImpactFramework.dll              0x7FF99C190000
+	MuImpactFramework.dll                  0x7FF99C390000
+	MLO_VR.dll                             0x7FF99C460000
+	MergeMapper.dll                        0x7FF99C4F0000
+	MenuMouseFix.dll                       0x7FF99C5D0000
+	MCMHelper.dll                          0x7FF99C640000
+	JContainersVR.dll                      0x7FF99C720000
+	InventoryInjector.dll                  0x7FF99CA00000
+	InstantlySkipDialogueNG.dll            0x7FF99CAA0000
+	IncreaseActorLimit.dll                 0x7FF99CB50000
+	ImWalkinHereVR.dll                     0x7FF99CBE0000
+	ImmersiveUI.dll                        0x7FF99CC90000
+	ImmersiveCrossbowReloadVR.dll          0x7FF99CD40000
+	higgs_vr.dll                           0x7FF99CDC0000
+	hdtSMP64.dll                           0x7FF99CEB0000
+	GrassSamplerFix.dll                    0x7FF99D6E0000
+	Fuz Ro D'oh.dll                        0x7FF99D770000
+	FormListManipulator.dll                0x7FF99D800000
+	Experience.dll                         0x7FF99D8F0000
+	DynamicStringDistributor.dll           0x7FF99DBA0000
+	DismemberingFramework.dll              0x7FF99DCB0000
+	DynDOLOD.DLL                           0x7FF99DF80000
+	CrashLogger.dll                        0x7FF99E070000
+	ConsoleUtilSSE.dll                     0x7FF99E370000
+	CommunityShaders.dll                   0x7FF99E4D0000
+	CombatPathingRevolution.dll            0x7FF99E700000
+	Better-Telekinesis-NG.dll              0x7FF99E830000
+	PrivateProfileRedirector.dll           0x7FF99EA00000
+	tbb12.dll                              0x7FF99EFD0000
+	tbbmalloc.dll                          0x7FF99F030000
+	EngineFixesVR.dll                      0x7FF99F090000
+	instant_equip_vr.dll                   0x7FF99F180000
+	sksevr_1_4_15.dll                      0x7FF99F350000
+	nvdxgdmal64.dll                        0x7FF99F530000
+	hapticskyrimvr_plugin.dll              0x7FF9A1C00000
+	DialogueMovementEnabler.dll            0x7FF9A1C70000
+	WeaponThrowVR.dll                      0x7FF9A1E00000
+	WeaponCollision.dll                    0x7FF9A1EE0000
+	VRIK.dll                               0x7FF9A1F80000
+	VRFpsStabilizer.dll                    0x7FF9A2070000
+	VRFly.dll                              0x7FF9A20E0000
+	SmartTalk.dll                          0x7FF9A2170000
+	CraftingCategories.dll                 0x7FF9A2420000
+	SteedsOfUltimaVR.dll                   0x7FF9A24A0000
+	SpellWheelVR.dll                       0x7FF9A2510000
+	misvr.dll                              0x7FF9A4630000
+	StormLightningVR.dll                   0x7FF9A4680000
+	SprintJumpVR.dll                       0x7FF9A46D0000
+	SpellAutoAimVR.dll                     0x7FF9A4730000
+	SoundRecordDistributor.dll             0x7FF9A4790000
+	SkyUI-VR.dll                           0x7FF9A4870000
+	FreeClimbVR.dll                        0x7FF9A7040000
+	SkyVRaanWeatherPatcher.dll             0x7FF9A70D0000
+	skyrimvresl.dll                        0x7FF9A7130000
+	AutoParallax.dll                       0x7FF9B92E0000
+	DINPUT8.dll                            0x7FF9CAA90000
+	steamclient64.dll                      0x7FF9CAAE0000
+	vstdlib_s64.dll                        0x7FF9CD0E0000
+	tier0_s64.dll                          0x7FF9CD1B0000
+	VRPerkExtender.dll                     0x7FF9D92E0000
+	gameoverlayrenderer64.dll              0x7FF9DB940000
+	to_your_face.dll                       0x7FF9EB970000
+	AnimationQueueFix.dll                  0x7FF9EB9B0000
+	AnimatedStaticReload.dll               0x7FF9EC030000
+	CONCRT140.dll                          0x7FF9ED450000
+	stuf_vr.dll                            0x7FF9ED550000
+	activeragdoll.dll                      0x7FF9ED580000
+	ANDR_PapyrusFunctions.dll              0x7FF9EDD10000
+	usvfs_x64.dll                          0x7FF9EE430000
+	vrclient_x64.dll                       0x7FF9EF410000
+	d3d12.dll                              0x7FF9EFDF0000
+	AHZmoreHUDPlugin.dll                   0x7FF9EFFB0000
+	openvr_api.dll                         0x7FF9FA240000
+	X3DAudio1_7.dll                        0x7FF9FA4C0000
+	msdmo.dll                              0x7FF9FC9D0000
+	WSOCK32.dll                            0x7FFA0BA30000
+	PriorityMod.dll                        0x7FFA0C1F0000
+	Save&LoadAcceleratorForSKSECosaves.dll 0x7FFA0FCE0000
+	console_selection_fix.dll              0x7FFA10530000
+	OPENGL32.dll                           0x7FFA10950000
+	sksevr_steam_loader.dll                0x7FFA14790000
+	MSVCP140_ATOMIC_WAIT.dll               0x7FFA169E0000
+	NvTelemetryBridge64.dll                0x7FFA1B980000
+	diskCacheEnabler.dll                   0x7FFA369B0000
+	skyrimvrtools.dll                      0x7FFA3C290000
+	textinputframework.dll                 0x7FFA41FC0000
+	ffx_fsr2_api_x64.dll                   0x7FFA45BD0000
+	nvppex.dll                             0x7FFA45CC0000
+	ResampleDmo.DLL                        0x7FFA45E80000
+	DSOUND.DLL                             0x7FFA45F40000
+	inputhost.dll                          0x7FFA46030000
+	GLU32.dll                              0x7FFA4AC90000
+	ffx_fsr3_x64.dll                       0x7FFA4B220000
+	AcGenral.DLL                           0x7FFA4B240000
+	Windows.UI.dll                         0x7FFA4C5B0000
+	ondemandconnroutehelper.dll            0x7FFA518F0000
+	NvTelemetryAPI64.dll                   0x7FFA537E0000
+	xinput1_4.dll                          0x7FFA55DB0000
+	urlmon.dll                             0x7FFA57320000
+	MPR.dll                                0x7FFA57510000
+	WININET.dll                            0x7FFA57FB0000
+	MSVCP140.dll                           0x7FFA585C0000
+	VCRUNTIME140.dll                       0x7FFA58650000
+	VCRUNTIME140_1.dll                     0x7FFA58670000
+	iertutil.dll                           0x7FFA58E50000
+	ncryptsslp.dll                         0x7FFA593A0000
+	srvcli.dll                             0x7FFA59400000
+	OLEACC.dll                             0x7FFA598F0000
+	COMCTL32.dll                           0x7FFA599B0000
+	WINSPOOL.DRV                           0x7FFA59C50000
+	MSIMG32.dll                            0x7FFA5AE60000
+	NvMessageBus.dll                       0x7FFA5B4B0000
+	nvspcap64.dll                          0x7FFA5B930000
+	nvapi64.dll                            0x7FFA5CE60000
+	dbghelp.dll                            0x7FFA5D920000
+	tdh.dll                                0x7FFA5E400000
+	AUDIOSES.DLL                           0x7FFA5FAB0000
+	nvwgf2umx.dll                          0x7FFA5FC70000
+	NvMemMapStoragex.dll                   0x7FFA65E80000
+	WINMM.dll                              0x7FFA66240000
+	nvgpucomp64.dll                        0x7FFA67100000
+	fwpuclnt.dll                           0x7FFA6BE00000
+	wevtapi.dll                            0x7FFA6C730000
+	dhcpcsvc.DLL                           0x7FFA6C820000
+	drvstore.dll                           0x7FFA6C850000
+	WINHTTP.dll                            0x7FFA6C9D0000
+	nvldumdx.dll                           0x7FFA6CD30000
+	cryptnet.dll                           0x7FFA6CE00000
+	MMDevApi.dll                           0x7FFA6D480000
+	CoreUIComponents.dll                   0x7FFA6DA20000
+	rasadhlp.dll                           0x7FFA6E2D0000
+	avrt.dll                               0x7FFA6E2F0000
+	directxdatabasehelper.dll              0x7FFA6E740000
+	ffx_fsr3upscaler_x64.dll               0x7FFA6F6D0000
+	Microsoft.Internal.WarpPal.dll         0x7FFA6FA80000
+	D3DCOMPILER_47.dll                     0x7FFA6FAA0000
+	d3d11.dll                              0x7FFA70A20000
+	dcomp.dll                              0x7FFA70C90000
+	CoreMessaging.dll                      0x7FFA71300000
+	winmmbase.dll                          0x7FFA715F0000
+	d3dx9_42.dll                           0x7FFA71630000
+	Secur32.dll                            0x7FFA716E0000
+	apphelp.dll                            0x7FFA716F0000
+	WTSAPI32.dll                           0x7FFA717A0000
+	WINNSI.DLL                             0x7FFA718D0000
+	UxTheme.dll                            0x7FFA71940000
+	dxcore.dll                             0x7FFA71A40000
+	dxgi.dll                               0x7FFA71A90000
+	dwmapi.dll                             0x7FFA71F00000
+	resourcepolicyclient.dll               0x7FFA72000000
+	VERSION.dll                            0x7FFA723D0000
+	HID.DLL                                0x7FFA72650000
+	netutils.dll                           0x7FFA72950000
+	IPHLPAPI.DLL                           0x7FFA72960000
+	DNSAPI.dll                             0x7FFA729F0000
+	schannel.DLL                           0x7FFA72DA0000
+	rsaenh.dll                             0x7FFA72EC0000
+	kernel.appcore.dll                     0x7FFA72F60000
+	ntmarta.dll                            0x7FFA73080000
+	SspiCli.dll                            0x7FFA73200000
+	MSWSOCK.dll                            0x7FFA734B0000
+	gpapi.dll                              0x7FFA73520000
+	USERENV.dll                            0x7FFA73560000
+	CRYPTBASE.DLL                          0x7FFA73700000
+	wldp.dll                               0x7FFA737A0000
+	cryptsp.dll                            0x7FFA738A0000
+	MSASN1.dll                             0x7FFA73900000
+	UMPDC.dll                              0x7FFA73A40000
+	NTASN1.dll                             0x7FFA73A60000
+	powrprof.dll                           0x7FFA73AB0000
+	ncrypt.dll                             0x7FFA73B20000
+	devobj.dll                             0x7FFA73E80000
+	cfgmgr32.dll                           0x7FFA73EB0000
+	DPAPI.DLL                              0x7FFA73F10000
+	bcrypt.dll                             0x7FFA740F0000
+	profapi.dll                            0x7FFA74120000
+	WINTRUST.dll                           0x7FFA74200000
+	KERNELBASE.dll                         0x7FFA74290000
+	msvcp_win.dll                          0x7FFA74690000
+	CRYPT32.dll                            0x7FFA74740000
+	gdi32full.dll                          0x7FFA748C0000
+	ucrtbase.dll                           0x7FFA749F0000
+	win32u.dll                             0x7FFA74C00000
+	wintypes.dll                           0x7FFA74C30000
+	bcryptPrimitives.dll                   0x7FFA74DA0000
+	Windows.Storage.dll                    0x7FFA74E50000
+	imagehlp.dll                           0x7FFA756C0000
+	OLEAUT32.dll                           0x7FFA75750000
+	ole32.dll                              0x7FFA758B0000
+	SHELL32.dll                            0x7FFA75A50000
+	COMDLG32.dll                           0x7FFA761B0000
+	clbcatq.dll                            0x7FFA762B0000
+	IMM32.DLL                              0x7FFA76370000
+	USER32.dll                             0x7FFA763B0000
+	combase.dll                            0x7FFA76580000
+	WS2_32.dll                             0x7FFA76910000
+	GDI32.dll                              0x7FFA76990000
+	PSAPI.DLL                              0x7FFA769D0000
+	advapi32.dll                           0x7FFA76C90000
+	KERNEL32.DLL                           0x7FFA76DF0000
+	MSCTF.dll                              0x7FFA76EE0000
+	NSI.dll                                0x7FFA77050000
+	msvcrt.dll                             0x7FFA77060000
+	RPCRT4.dll                             0x7FFA77110000
+	SETUPAPI.dll                           0x7FFA77230000
+	sechost.dll                            0x7FFA776C0000
+	shcore.dll                             0x7FFA77770000
+	SHLWAPI.dll                            0x7FFA77870000
+	ntdll.dll                              0x7FFA77920000
+
+SKSE PLUGINS:
+	activeragdoll.dll
+	AHZmoreHUDPlugin.dll v1.1
+	ANDR_PapyrusFunctions.dll
+	AnimatedStaticReload.dll v1.0.1
+	AnimationQueueFix.dll v1.0.1
+	AutoParallax.dll v1.0.7
+	BehaviorDataInjector.dll v0.1.3
+	Better-Telekinesis-NG.dll v4
+	CombatPathingRevolution.dll v0.30.1
+	CommunityShaders.dll v0.8.7
+	console_selection_fix.dll
+	ConsoleUtilSSE.dll v1.5.1
+	CraftingCategories.dll v1.1.1
+	CrashLogger.dll v1.16
+	DialogueMovementEnabler.dll v2.2.0.1
+	diskCacheEnabler.dll
+	DismemberingFramework.dll v1.2.2
+	DynamicStringDistributor.dll v1.2.5
+	DynDOLOD.DLL v666.666.666.666
+	EngineFixesVR.dll
+	Experience.dll v3.6.2
+	FormListManipulator.dll v1.8.1
+	FreeClimbVR.dll v0.1
+	Fuz Ro D'oh.dll v1.7.10.10
+	GrassSamplerFix.dll v1.0.1
+	hapticskyrimvr_plugin.dll
+	hdtSMP64.dll
+	higgs_vr.dll
+	ImmersiveCrossbowReloadVR.dll
+	ImmersiveUI.dll v1
+	ImWalkinHereVR.dll v1.5
+	IncreaseActorLimit.dll
+	instant_equip_vr.dll
+	InstantlySkipDialogueNG.dll v1.1.1
+	InventoryInjector.dll v1.1
+	JContainersVR.dll v4.2.11
+	MCMHelper.dll v1.5
+	MenuMouseFix.dll
+	MergeMapper.dll v1.5
+	misvr.dll
+	MLO_VR.dll v1
+	MuImpactFramework.dll v0.9
+	ObjectImpactFramework.dll v1.6.6
+	OpenAnimationReplacer.dll v2.3.6
+	PairedAnimationImprovements.dll v1.0.2
+	PapyrusTweaks.dll v4.1
+	PapyrusUtil.dll
+	papyrusutil_eslpatch.dll v1
+	PayloadInterpreter.dll v1
+	po3_BaseObjectSwapper.dll v3.4.1.1
+	po3_ConsolePlusPlus.dll v1.4.0.1
+	po3_DualCastingFix.dll v1.0.0.1
+	po3_KeywordItemDistributor.dll v3.4.0.1
+	po3_LockVariations.dll v4.0.0.1
+	po3_MoonMod.dll v2.0.0.1
+	po3_PapyrusExtender.dll v6.1.0.1
+	po3_SaveUnbaker.dll v1.0.4.1
+	po3_SpellPerkItemDistributor.dll v7.1.3.1
+	po3_Tweaks.dll v1.14.1.1
+	PoachedBugsVR.dll v0.5
+	PriorityMod.dll
+	PrivateProfileRedirector.dll
+	RicochetFramework.dll v1.0.2
+	RoguesGallery.dll v1.0.0.1
+	SCAR.dll v1.0.7
+	SkyPatcher.dll v1.0.0.1
+	SkyrimUpscaler.dll v1
+	skyrimvresl.dll v1.2
+	skyrimvrtools.dll
+	SkyUI-VR.dll
+	SkyVRaanWeatherPatcher.dll
+	SmartTalk.dll v1.0.3
+	SoundRecordDistributor.dll v1.5
+	SpellAutoAimVR.dll
+	SpellWheelVR.dll
+	SprintJumpVR.dll
+	SteedsOfUltimaVR.dll
+	StormLightningVR.dll
+	stuf_vr.dll
+	ThrowingStuffVR.dll
+	to_your_face.dll
+	VRFly.dll v0.1
+	VRFpsStabilizer.dll
+	VRIK.dll
+	VRPerkExtender.dll v1.0.1
+	WeaponCollision.dll v2.0.1
+	WeaponThrowVR.dll
+
+PLUGINS:
+	Light: 143	Regular: 69	Total: 212
+	[ 0]     Skyrim.esm
+	[ 1]     Update.esm
+	[ 2]     Dragonborn.esm
+	[ 3]     HearthFires.esm
+	[ 4]     Dawnguard.esm
+	[ 5]     SkyrimVR.esm
+	[ 6]     Unofficial Skyrim Special Edition Patch.esp
+	[ 7]     Lanterns Of Skyrim II.esm
+	[ 8]     Occ_Skyrim_Tamriel.esp
+	[ 9]     RealisticWaterTwo - Resources.esm
+	[ A]     IcyFixesLite.esm
+	[ B]     Gray Fox Cowl.esm
+	[ C]     DarkWorld.esp
+	[ D]     DAc0da.esm
+	[ E]     SkyUI_SE.esp
+	[ F]     SMIM-SE-Merged-NoRiftenRopes-NoSolitudeRopes.esp
+	[10]     Immersive Sounds - Compendium.esp
+	[11]     Thaumaturgy.esp
+	[12]     Landscape Fixes For Grass Mods.esp
+	[13]     The Restless Dead.esp
+	[14]     MysticismMagic.esp
+	[15]     HappyLittleTrees.esp
+	[16]     Relationship Dialogue Overhaul.esp
+	[17]     Immersive Encounters.esp
+	[18]     Adamant.esp
+	[19]     Apothecary.esp
+	[1A]     Unmarked Locations Pack - All In One.esp
+	[1B]     Realm of Lorkhan - Custom Alternate Start - Choose your own adventure.esp
+	[1C]     BeSeated_3.0.0.esp
+	[1D]     AHZmoreHUD.esp
+	[1E]     I4IconAddon.esp
+	[1F]     Morning Fogs SSE.esp
+	[20]     Sorcerer.esp
+	[21]     Cathedral Weathers.esp
+	[22]     Solitude Skyway SE.esp
+	[23]     Arena959.esp
+	[24]     Missives.esp
+	[25]     SteedsOfUltimaVR.esp
+	[26]     VR_ImmersiveSmithing.esp
+	[27]     SkinWalker21_DireWolves.esp
+	[28]     SimplyBalanced.esp
+	[29]     NoStaminaDrainForSprinting.esp
+	[2A]     Conduit.esp
+	[2B]     dD-No Spinning Death Animation Merged.esp
+	[2C]     Insignificant Object Remover.esp
+	[2D]     Whiterun No Yellow Fog.esp
+	[2E]     BlendedRoads.esp
+	[2F]     VREquip.esp
+	[30]     BetterResourceWarnings.esp
+	[31]     VR Refit - Mine Chop and Drop.esp
+	[32]     RealisticMiningAndChoppingVR.esp
+	[33]     Simple Realistic Archery VR.esp
+	[34]     SpellWheelVR.esp
+	[35]     Leveling Freedom.esp
+	[36]     higgs_vr.esp
+	[37]     vrik.esp
+	[38]     _Fuse00_ArmorKitsuneHunter.esp
+	[39]     _Fuse00_ArmorTimeT.esp
+	[3A]     _Fuse00_ArmorOrdinator.esp
+	[3B]     No NPC Greetings.esp
+	[3C]     RDO - USSEP Patch.esp
+	[3D]     NoStagger.esp
+	[3E]     JawZ_Weathers CW.esp
+	[3F]     VRFly.esp
+	[40]     WeaponThrowVR.esp
+	[41]     RealisticWaterTwo.esp
+	[42]     NewVRWaterColor-RW2 v3 r6.esp
+	[43]     Skyland Watercolor - Slow Green-RW2.esp
+	[44]     Lux.esp
+	[FE:  0] Skyrim Project Optimization - Full ESL Version.esm
+	[FE:  1] Treescale.esm
+	[FE:  2] Landscape and Water Fixes.esp
+	[FE:  3] Landscape and Water Fixes - v1.5.97-Only Fixes.esp
+	[FE:  4] OCF.esp
+	[FE:  5] Obsidian Mountain Fogs.esp
+	[FE:  6] DIAL.esp
+	[FE:  7] Lux - Resources.esp
+	[FE:  8] Lux - Master plugin.esm
+	[FE:  9] Dismembering Framework.esm
+	[FE:  A] TES4WaitMenu.esl
+	[FE:  B] AHZMagicRange15x.esl
+	[FE:  C] IceLOD.esl
+	[FE:  D] IMRPatchForVanillaAndBDS.esl
+	[FE:  E] Landscape and Water Fixes - Patch - LFfGM.esp
+	[FE:  F] Stretched Snow Begone.esp
+	[FE: 10] Artificer.esp
+	[FE: 11] Skyrim On Skooma.esp
+	[FE: 12] ThrowStuff.esp
+	[FE: 13] Gourmet.esp
+	[FE: 14] man_DaedricShrines.esp
+	[FE: 15] ASS_IconsAddon.esp
+	[FE: 16] BOOBIES_ImmersiveIcons.esp
+	[FE: 17] MCMHelper.esp
+	[FE: 18] McmRecorder.esp
+	[FE: 19] PENIS_IconsAddon.esp
+	[FE: 1A] Regional Sounds Expansion.esp
+	[FE: 1B] Reverb Interior Sounds Expansion.esp
+	[FE: 1C] Ivy Riften Docks Overhaul.esp
+	[FE: 1D] WiZkiD Hunter's Camp Overhaul.esp
+	[FE: 1E] Spaghetti's Cities - AIO.esp
+	[FE: 1F] Infiltration - Quest Expansion.esp
+	[FE: 20] AcousticTemplateFixes.esp
+	[FE: 21] Spaghetti's Cities - AIO - NavCuts.esp
+	[FE: 22] Shroom Beetles.esp
+	[FE: 23] Spaghetti's Towns - AIO.esp
+	[FE: 24] CWRepairs.esp
+	[FE: 25] WiZkiD Shack Doors and Windows.esp
+	[FE: 26] Spaghetti's Towns - AIO - NavCuts.esp
+	[FE: 27] BirbWalker21_GiantGastropods.esp
+	[FE: 28] The Standing Sound Stones.esp
+	[FE: 29] Arsinoitherium.esp
+	[FE: 2A] Meteorgarden.esp
+	[FE: 2B] Ruins Over Riverwood.esp
+	[FE: 2C] Spaghetti Towns AIO - LOS II.esp
+	[FE: 2D] Better Dynamic Snow - Definitive Edition.esp
+	[FE: 2E] Spaghetti Cities AIO - LOS II.esp
+	[FE: 2F] Falkreath Fort Ruins.esp
+	[FE: 30] LoS II - USSEP patch.esp
+	[FE: 31] Landscape and Water Fixes - Patch - LoS II.esp
+	[FE: 32] AcousticTemplateFixes_ReverbInteriorSounds.esp
+	[FE: 33] DF - Official Creature Pack.esp
+	[FE: 34] DF - Official Humanoid Pack.esp
+	[FE: 35] Adamant Tweaks for ADXP.esp
+	[FE: 36] Artificer Skillrate Alternative.esp
+	[FE: 37] Scion.esp
+	[FE: 38] Manbeast.esp
+	[FE: 39] Mundus.esp
+	[FE: 3A] MundusUSSEP.esp
+	[FE: 3B] Gourmet - VR Patch.esp
+	[FE: 3C] SimplyBalanced - Settings Loader.esp
+	[FE: 3D] iSpellEffectsEmitLight.esp
+	[FE: 3E] C.O.I.N.esp
+	[FE: 3F] COIN - Adamant Patch.esp
+	[FE: 40] StormLightning.esp
+	[FE: 41] UniqueDragonPriests_XB.esp
+	[FE: 42] DynamicAnimalVariantsPlus.esp
+	[FE: 43] EVGConditionalIdles.esp
+	[FE: 44] NPCs Take Cover.esp
+	[FE: 45] buy and sell torches.esp
+	[FE: 46] Dragon Claws Auto-Unlock.esp
+	[FE: 47] Dynamic Things Alternative.esp
+	[FE: 48] BlendedRoadsFixes.esp
+	[FE: 49] BetterArgonianHorns.esp
+	[FE: 4A] Children of the Hist.esp
+	[FE: 4B] Project ja-Kha'jay- Khajiit Diversity.esp
+	[FE: 4C] JKJ - USSEP Patch.esp
+	[FE: 4D] Children of the Pariah.esp
+	[FE: 4E] CotP-USSEP Patch.esp
+	[FE: 4F] Sentinel.esp
+	[FE: 50] JS Unique Utopia SE - Daggers - Johnskyrim.esp
+	[FE: 51] Sentinel - Adamant Patch.esp
+	[FE: 52] JS Unique Utopia SE - Rings - Johnskyrim.esp
+	[FE: 53] Around the Fire.esp
+	[FE: 54] Disable Killmoves for Everyone.esp
+	[FE: 55] CBBE.esp
+	[FE: 56] LightBodyHorsesReplacer.esp
+	[FE: 57] JumpAttack.esp
+	[FE: 58] Dynamic Impacts.esp
+	[FE: 59] Extended Bandit Dialogue.esp
+	[FE: 5A] NPCs_Wear_Amulets_Of_Mara.esp
+	[FE: 5B] Immersive Rejections.esp
+	[FE: 5C] Companions Dialogue Bundle.esp
+	[FE: 5D] WindhelmDialogueExpansion.esp
+	[FE: 5E] Bandit Lines Expansion.esp
+	[FE: 5F] WaitYourTurn.esp
+	[FE: 60] KIT.esp
+	[FE: 61] Use Those Blankets.esp
+	[FE: 62] Scared of Shootings.esp
+	[FE: 63] MoonsAndStars.esp
+	[FE: 64] Ricochet Framework - MCM.esp
+	[FE: 65] CrossbowReloadVR.esp
+	[FE: 66] Arctals VRIK Tweaks.esp
+	[FE: 67] Smart Talk - MCM.esp
+	[FE: 68] StaticSkillLeveling.esp
+	[FE: 69] FSMPM - The FSMP MCM.esp
+	[FE: 6A] BOOBIES_potions.esp
+	[FE: 6B] BOOBIES_Potions - Apothecary Patch.esp
+	[FE: 6C] Missives - Deliveries in Skyrim.esp
+	[FE: 6D] Realm of Lorkhan - Dragonstone.esp
+	[FE: 6E] TRD Optional File - Difficulty (IV) - Hard.esp
+	[FE: 6F] JS Unique Utopia SE - Rings - Artificer Patch.esp
+	[FE: 70] JS Unique Utopia SE - Rings - USSEP Patch.esp
+	[FE: 71] JS Unique Utopia SE - Rings - Manbeast Patch.esp
+	[FE: 72] JS Unique Utopia SE - Rings - Scion Patch.esp
+	[FE: 73] Serana Hair - From Simply Serana.esp
+	[FE: 74] Simply Serana - a visual replacer.esp
+	[FE: 75] BetterTelekinesis.esp
+	[FE: 76] FOLIP.esp
+	[FE: 77] HappyLittleShrubs.esp
+	[FE: 78] Demon Shade.esp
+	[FE: 79] Ruins of the Swamp.esp
+	[FE: 7A] CathedralWeatherMCM.esp
+	[FE: 7B] Cathedral Weather Godrays.esp
+	[FE: 7C] MoreVisibleTundraStream.esp
+	[FE: 7D] VRWaterColor-Volcanic.esp
+	[FE: 7E] JS Unique Utopia SE - Rings - ISC Patch.esp
+	[FE: 7F] Dynamic Impacts - Immersive Sound Compendium Patch.esp
+	[FE: 80] Animated Wings Ultimate.esp
+	[FE: 81] scar-adxp-patch.esp
+	[FE: 82] ArrowRecovery100.esp
+	[FE: 83] Aetherius.esp
+	[FE: 84] AetheriusSpells.esp
+	[FE: 85] NewVRWaterColor-RW2 v4-Default.esp
+	[FE: 86] SPO LUX Patch.esp
+	[FE: 87] TRD Patch - Lux.esp
+	[FE: 88] Lux - RWT Patch.esp
+	[FE: 89] Lux - USSEP patch.esp
+	[FE: 8A] Lux - SLaWF patch.esp
+	[FE: 8B] Lux - Daedric Shrines AiO Patch.esp
+	[FE: 8C] Lux - The Gray Cowl of Nocturnal patch.esp
+	[FE: 8D] DIAL_Lux_Patch.esp
+	[FE: 8E] A Clear Map of Skyrim.esp

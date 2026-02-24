@@ -1,0 +1,15 @@
+[0m[38;2;0;255;0;1m[  0%]:[0m compiling.release src\main.cpp[0m
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release src\vrui\VRMenuManager.cpp[0m
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release src\vrui\VRUIButton.cpp[0m
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release src\vrui\VRUIPanel.cpp[0m
+[0m[38;2;0;255;0;1m[  2%]:[0m compiling.release src\vrui\VRUISettings.cpp[0m
+[0m[38;2;0;255;0;1m[  2%]:[0m compiling.release src\vrui\VRUIToggleButton.cpp[0m
+[0m[1;38;2;255;0;0;1merror: [0mVRUIButton.cpp
+src\vrui\VRUIButton.cpp(97): error C2039: ' Create': não é um membro de 'RE::NiSourceTexture'
+lib\commonlibsse-ng\include\RE/N/NiSourceTexture.h(26): note: consulte a declaração de 'RE::NiSourceTexture'
+src\vrui\VRUIButton.cpp(97): error C3861: 'Create': identificador não encontrado
+src\vrui\VRUIButton.cpp(97): error C3535: não é possível deduzir tipo para 'auto *' a partir de '<error type>'
+src\vrui\VRUIButton.cpp(102): error C2760: erro de sintaxe: '>' não era esperado aqui; o esperado era 'expressão'
+src\vrui\VRUIButton.cpp(122): error C2059: erro de sintaxe: ')'
+
+  [38;2;255;255;0m> in [1msrc\vrui\VRUIButton.cpp[0m

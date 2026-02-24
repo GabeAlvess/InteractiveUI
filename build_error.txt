@@ -1,0 +1,20 @@
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release build\.gens\ImmersiveUI\windows\x64\release\src\pch.h[0m
+[0m[38;2;0;255;0;1m[  0%]:[0m compiling.release src\keyhandler\keyhandler.cpp[0m
+[0m[38;2;0;255;0;1m[  0%]:[0m compiling.release src\main.cpp[0m
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release src\vrui\VRMenuManager.cpp[0m
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release src\vrui\VRUIButton.cpp[0m
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release src\vrui\VRUIContainer.cpp[0m
+[0m[38;2;0;255;0;1m[  1%]:[0m compiling.release src\vrui\VRUIMenuMCM.cpp[0m
+[0m[38;2;0;255;0;1m[  2%]:[0m compiling.release src\vrui\VRUIPanel.cpp[0m
+[0m[38;2;0;255;0;1m[  2%]:[0m compiling.release src\vrui\VRUISettings.cpp[0m
+[0m[38;2;0;255;0;1m[  2%]:[0m compiling.release src\vrui\VRUISlider.cpp[0m
+[0m[38;2;0;255;0;1m[  2%]:[0m compiling.release src\vrui\VRUIToggleButton.cpp[0m
+[0m[38;2;0;255;0;1m[  3%]:[0m compiling.release src\vrui\VRUIWidget.cpp[0m
+[0m[38;2;0;255;0;1m[  3%]:[0m compiling.release build\.gens\ImmersiveUI\windows\x64\release\rules\commonlibsse-ng\plugin\plugin.cpp[0m
+[0m[38;2;0;255;0;1m[  3%]:[0m compiling.release build\.gens\ImmersiveUI\windows\x64\release\rules\commonlibsse-ng\plugin\version.rc[0m
+[0m[1;38;2;255;0;0;1merror: [0mVRUIContainer.cpp
+src\vrui\VRUIContainer.cpp(117): warning C4244: 'return': conversão de 'float' para 'int', possível perda de dados
+src\vrui\VRUIContainer.cpp(141): error C2065: '_layoutDirty': identificador não declarado
+src\vrui\VRUIContainer.cpp(231): warning C4244: 'inicializando': conversão de 'float' para 'int', possível perda de dados
+
+  [38;2;255;255;0m> in [1msrc\vrui\VRUIContainer.cpp[0m
